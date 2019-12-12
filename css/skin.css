@@ -5750,6 +5750,6 @@ header.mainHeader * {}
 }
 
 .blackBack {
-  background-color: #000;
-  color: #fff;
+  background-color: #000 !important;
+  color: #fff !important;
 }
