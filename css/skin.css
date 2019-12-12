@@ -5748,3 +5748,8 @@ header.mainHeader * {}
   background-color: rgb(9,44,116);
   color: #fff;
 }
+
+.blackBack {
+  background-color: #000;
+  color: #fff;
+}
