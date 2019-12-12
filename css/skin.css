@@ -3259,16 +3259,16 @@ header.mainHeader * {}
       background-image: url('../images/youtube.png');
     }
     .mainFooter .socialMedia a:hover span.facebook, .mainFooter .socialMedia a:focus span.facebook{
-      background-color:#4b5998;
+      background-color:#4b5998 !important;
     }
     .mainFooter .socialMedia a:hover span.twitter, .mainFooter .socialMedia a:focus span.twitter{
-      background-color:#1DA1F2;
+      background-color:#1DA1F2 !important;
     }
     .mainFooter .socialMedia a:hover span.instagram, .mainFooter .socialMedia a:focus span.instagram{
-      background-color:#bc2a8d;
+      background-color:#bc2a8d !important;
     }
     .mainFooter .socialMedia a:hover span.youtube, .mainFooter .socialMedia a:focus span.youtube{
-      background-color:#cd201f;
+      background-color:#cd201f !important;
     }
     /* End Footer */
     /* Video */
