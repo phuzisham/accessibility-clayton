@@ -10,7 +10,7 @@ p {
   line-height: 1.5em
 }
 
-.DNNEmptyPane {
+.EmptyPane {
   display: none!important
 }
 
@@ -2958,7 +2958,7 @@ header.mainHeader * {}
     #navbar .mainMenu{
       padding-left:0;
       padding-right:0;
-      background-color: rgb(9,44,116) !important;
+      background-color: rgb(9,44,116);
       margin-bottom:-1px;
       margin-top:-1px;
       z-index:1000;
@@ -3033,10 +3033,10 @@ header.mainHeader * {}
       height: 25px;
       width: 25px;
     }
-    #dnnMenu {
+    #claytonMenu {
       border-right:1px solid #54565b;
     }
-    #dnnMenu, #navbar .searchBox, #logo{
+    #claytonMenu, #navbar .searchBox, #logo{
       display:inline-block;
       margin-top:24px;
     }
@@ -3065,7 +3065,7 @@ header.mainHeader * {}
     .searchInputContainer .searchSkinObjectPreview, .searchInputContainer a.dnnSearchBoxClearText.dnnShow{
       display:none;
     }
-    #dnnMenu .topLevel>li>a{
+    #claytonMenu .topLevel>li>a{
       font-size: 14px;
       color:#54565b;
       font-weight:bold;
@@ -3698,7 +3698,7 @@ header.mainHeader * {}
       margin-right: 15px;
       margin-left:8px;
     }
-    #dnnMenu .topLevel li.newsEvents-A a.allLink:hover {
+    #claytonMenu .topLevel li.newsEvents-A a.allLink:hover {
       background-color: #092c74;
       color: #fff;
       border-bottom: none;
@@ -4830,14 +4830,14 @@ header.mainHeader * {}
       #navbar .container-fluid{
         background-color: rgba(0,0,0,0);
       }
-      #dnnMenu .topLevel li {
+      #claytonMenu .topLevel li {
         background: #ffffff;
         border:none;
       }
-      #dnnMenu .topLevel li.last{
+      #claytonMenu .topLevel li.last{
         border-bottom:1px solid #00FFFF;
       }
-      #dnnMenu .topLevel li a {
+      #claytonMenu .topLevel li a {
         color: #000000;
       }
       #navbar .searchBox {
@@ -4851,11 +4851,11 @@ header.mainHeader * {}
       #stamatsMenu .navTopLevel li.last{
         border-bottom:none;
       }
-      #dnnMenu, #navbar .searchBox{
+      #claytonMenu, #navbar .searchBox{
         display:block;
         width:100%;
       }
-      #dnnMenu{
+      #claytonMenu{
         margin-top:0;
       }
       #navbar .searchBox{
@@ -4890,7 +4890,7 @@ header.mainHeader * {}
       #navbar[aria-expanded=true]>.contentWidth{
         background-color:#ffffff;
       }
-      #navbar[aria-expanded=true] #dnnMenu{
+      #navbar[aria-expanded=true] #claytonMenu{
         margin-top:0px;
       }
       .menuOpen #mobileLogo{
@@ -5185,12 +5185,12 @@ header.mainHeader * {}
       #navbar>.contentWidth{
         text-align:right;
       }
-      #dnnMenu{
+      #claytonMenu{
         /*padding-right:25px;*/
         padding-right: 5px;
         margin-right: 20px;
       }
-      #dnnMenu .topLevel li a:hover {
+      #claytonMenu .topLevel li a:hover {
         border-bottom: none;
         color:#092c74;
         text-decoration:underline;
@@ -5238,13 +5238,13 @@ header.mainHeader * {}
       .searchArea.expanded .searchInputContainer{
         width:85%;
       }
-      .searchArea.expanded #dnnMenu, .searchArea #dnnMenu{
+      .searchArea.expanded #claytonMenu, .searchArea #claytonMenu{
         /*margin-right:163px;*/
       }
-      .searchArea.expanded #dnnMenu{
+      .searchArea.expanded #claytonMenu{
         text-indent:-10000px;
       }
-      .searchArea #dnnMenu{
+      .searchArea #claytonMenu{
         visibility:visible;
       }
       /* End Header */
@@ -5426,7 +5426,7 @@ header.mainHeader * {}
       text-decoration:underline;
       color:#fff;
     }
-    #dnnMenu .topLevel li a:focus, a:focus{
+    #claytonMenu .topLevel li a:focus, a:focus{
       text-decoration:underline;
       color:#092c74;
     }
@@ -5437,7 +5437,7 @@ header.mainHeader * {}
       padding-left:3px;
       padding-right:3px;
     }
-    #dnnMenu .topLevel li a:focus span, #stamatsMenu .navTopLevel li a:focus span{
+    #claytonMenu .topLevel li a:focus span, #stamatsMenu .navTopLevel li a:focus span{
       padding:0;
     }
     .phone .phoneIcon:focus, .address .addressIcon:focus{
@@ -5744,14 +5744,14 @@ header.mainHeader * {}
         padding:0;
       }
 
-/* .blueBack {
+.blueBack {
   background-color: rgb(9,44,116);
   color: #fff;
 }
 
 .blueBack:hover {
   background-color: #54565b !important;
-} */
+}
 
 .blackBack {
   background-color: #000 !important;
@@ -5760,4 +5760,15 @@ header.mainHeader * {}
 
 .hiddenSocial {
   display: none;
+}
+
+.ytp-title-text {
+  display:none;
+}
+.ytp-chrome-top ytp-share-button-visible {
+  display:none;
+}
+
+.news-padding {
+  padding-bottom:20px;
 }

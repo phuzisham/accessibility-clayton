@@ -31,14 +31,14 @@
 		<script src="../js/jquery.js" type="text/javascript"></script>
 		<script src="../js/jquery-ui.js" type="text/javascript"></script>
 		<script src="../js/appinsights.js" type="text/javascript"></script>
-		<script src="../js/dnn.js" type="text/javascript"></script>
-		<script src="../js/dnn.modalpopup.js" type="text/javascript"></script>
+		<script src="../js/clayton.js" type="text/javascript"></script>
+		<script src="../js/clayton.modalpopup.js" type="text/javascript"></script>
 		<script src="../js/CustomSearch.js" type="text/javascript"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.bootstrap.js" type="text/javascript"></script>
-		<script src="../js/dnncore.js" type="text/javascript"></script>
-		<script src="../js/dnn.servicesframework.js" type="text/javascript"></script>
+		<script src="../js/clayton-core.js" type="text/javascript"></script>
+		<script src="../js/clayton.servicesframework.js" type="text/javascript"></script>
 		<script src="../js/scripts.js" type="text/javascript"></script>
 		<script src="../js/outboundGA.js" type="text/javascript"></script>
 		<script src="../js/jquery.flexslider-min.js"></script>
@@ -49,7 +49,7 @@
 	</head>
 
 	<body id="Body">
-		<form method="post" action="/" id="Form" enctype="multipart/form-data">
+		
 			<div id="siteWrapper" class="container-fluid">
 
 			<header>
@@ -87,7 +87,7 @@
 										</h1>
 									</div><!-- / #logo -->
 									<div class="searchArea" role="navigation" aria-label="Secondary CSU Menu">
-										<div id="dnnMenu" style="position: static; left: 0px;">
+										<div id="claytonMenu" style="position: static; left: 0px;">
 											<ul class="nav navbar-nav topLevel sm" data-smartmenus-id="15065261956596768">
 												<li><a href="/students"><span>Students</span></a></li>
 												<li><a href="/faculty-staff"><span>Faculty &amp; Staff</span></a></li>
@@ -112,10 +112,10 @@
 								<div id="stamatsMenu">
 									<ul class="navTopLevel" role="menubar">
 										<li class="dropdown" role="menuitem">
-											<a href="/about" role="button" id="ddrmenu_link_1" aria-owns="ddrmenu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
+											<a href="/about" role="button" id="menu_link_1" aria-owns="menu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
 												<span class="blueBack">About CSU<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_1" aria-labelledby="ddrmenu_link_1" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_1" aria-labelledby="menu_link_1" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/about/dreams-made-real" role="button" class="child1"><span>Dreams. Made Real.</span></a></li>
 												<li role="menuitem"><a href="/about/visit" role="button" class="child2"><span>Visit Us</span></a></li>
 												<li role="menuitem"><a href="/about/history-and-traditions" role="button" class="child3"><span>History &amp; Traditions</span></a></li>
@@ -129,10 +129,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/academics" role="button" id="ddrmenu_link_2" aria-owns="ddrmenu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
+											<a href="/academics" role="button" id="menu_link_2" aria-owns="menu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
 												<span class="blueBack">Academics<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_2" aria-labelledby="ddrmenu_link_2" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_2" aria-labelledby="menu_link_2" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/academics/undergraduate-study" role="button" class="child1"><span>Undergraduate Study</span></a></li>
 												<li role="menuitem"><a href="/academics/degrees-majors-and-certificates" role="button" class="child2"><span>Degrees, Majors &amp; Certificates</span></a></li>
 												<li role="menuitem"><a href="/academics/graduate-study" role="button" class="child3"><span>Graduate Study</span></a></li>
@@ -144,10 +144,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/admissions" role="button" id="ddrmenu_link_3" aria-owns="ddrmenu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
+											<a href="/admissions" role="button" id="menu_link_3" aria-owns="menu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
 												<span class="blueBack">Admissions<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_3" aria-labelledby="ddrmenu_link_3" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_3" aria-labelledby="menu_link_3" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/admissions/undergraduate" role="button" class="child1"><span>Undergraduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/graduate/apply" role="button" class="child2"><span>Graduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/ce" role="button" class="child3"><span>Continuing Education</span></a></li>
@@ -163,10 +163,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/student-life" role="button" id="ddrmenu_link_4" aria-owns="ddrmenu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
+											<a href="/student-life" role="button" id="menu_link_4" aria-owns="menu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
 												<span class="blueBack">Student Life<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_4" aria-labelledby="ddrmenu_link_4" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_4" aria-labelledby="menu_link_4" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/student-life/books-and-dining" role="button" class="child1"><span>Books &amp; Dining</span></a></li>
 												<li role="menuitem"><a href="/student-life/arts-and-culture" role="button" class="child2"><span>Arts &amp; Culture</span></a></li>
 												<li role="menuitem"><a href="/housing" role="button" class="child3"><span>University Housing</span></a></li>
@@ -185,10 +185,10 @@
 											</a>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/alumni" role="button" id="ddrmenu_link_6" aria-owns="ddrmenu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
+											<a href="/alumni" role="button" id="menu_link_6" aria-owns="menu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
 												<span class="blueBack">Alumni<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_6" aria-labelledby="ddrmenu_link_6" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_6" aria-labelledby="menu_link_6" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/alumni/events" role="button" class="child1"><span>Events</span></a></li>
 												<li role="menuitem"><a href="/alumni/get-involved" role="button" class="child2"><span>Get Involved</span></a></li>
 												<li role="menuitem"><a href="/alumni/stay-connected" role="button" class="child3"><span>Stay Connected</span></a></li>
@@ -212,28 +212,28 @@
       <div id="content">
 
 	<div class="container-fluid" id="UASliderStyle">
-		<div id="dnn_UASlider" class="DNNEmptyPane"></div>
+		<div id="dnn_UASlider" class="EmptyPane"></div>
 	</div>
 
 	<div class="container-fluid" id="UANavigationStyle">
-		<div id="dnn_UANavigation" class="contentWidth DNNEmptyPane"></div>
+		<div id="dnn_UANavigation" class="contentWidth EmptyPane"></div>
 	</div>
 
 	<div class="container-fluid" id="uaOtherStyle">
-			<div id="dnn_UAHOther" class="DNNEmptyPane"></div>
+			<div id="dnn_UAHOther" class="EmptyPane"></div>
 	</div>
 
     <div class="container-fluid contentWidth" id="mainContent" tabindex="-1">
 
         <div class="container-fluid">
-        	<div id="dnn_CoverImagePane" class="DNNEmptyPane"></div>
-            <div id="mast-head"><div id="dnn_SiteTitlePane" class="flex-caption DNNEmptyPane"></div></div>
+        	<div id="dnn_CoverImagePane" class="EmptyPane"></div>
+            <div id="mast-head"><div id="dnn_SiteTitlePane" class="flex-caption EmptyPane"></div></div>
         </div>
 
         <div id="tabs-container">
         	<div class="container-fluid">
             	<div class="row">
-            		<div id="dnn_TabsPane" class="DNNEmptyPane"></div>
+            		<div id="dnn_TabsPane" class="EmptyPane"></div>
             	</div>
         	</div>
         </div>
@@ -242,10 +242,10 @@
         	<div class="container-fluid">
             	<div class="row">
                 	<div class="col-sm-9">
-            			<div id="dnn_giveNavBluePane" class="DNNEmptyPane"></div>
+            			<div id="dnn_giveNavBluePane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                    	<div id="dnn_giveNavBluePane2" class="DNNEmptyPane"></div>
+                    	<div id="dnn_giveNavBluePane2" class="EmptyPane"></div>
                     </div>
             	</div>
         	</div>
@@ -255,50 +255,50 @@
         	<div class="container-fluid">
             	<div class="row">
                 	<div class="col-sm-9">
-            			<div id="dnn_giveNavPane" class="DNNEmptyPane"></div>
+            			<div id="dnn_giveNavPane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                    	<div id="dnn_giveNavPane2" class="DNNEmptyPane"></div>
+                    	<div id="dnn_giveNavPane2" class="EmptyPane"></div>
                     </div>
             	</div>
         	</div>
         </div>
 
-        <div id="about-container">
+        <div >
         	<div class="container-fluid">
             	<div class="row">
                 	<div class="col-sm-9">
-                    	<div id="dnn_GiveDreamsPane1" class="DNNEmptyPane"></div>
+                    	<div id="dnn_GiveDreamsPane1" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                    	<div id="dnn_GiveDreamsPane2" class="DNNEmptyPane"></div>
+                    	<div id="dnn_GiveDreamsPane2" class="EmptyPane"></div>
                     </div>
                 </div>
 
                 <div class="row">
                 	<div class="col-sm-8">
-                    	<div id="dnn_GiveDreamsPane3" class="DNNEmptyPane"></div>
+                    	<div id="dnn_GiveDreamsPane3" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-4">
-                    	<div id="dnn_GiveDreamsPane4" class="DNNEmptyPane"></div>
+                    	<div id="dnn_GiveDreamsPane4" class="EmptyPane"></div>
                     </div>
                 </div>
 
                 <div class="row">
 
                 	<div class="col-sm-3">
-                    	<div id="dnn_theLibraryNavigation" class="DNNEmptyPane"></div>
+                    	<div id="dnn_theLibraryNavigation" class="EmptyPane"></div>
                     </div>
 
                     <div class="col-sm-9">
-                    	<div id="dnn_theLibraryContent1" class="DNNEmptyPane"></div>
+                    	<div id="dnn_theLibraryContent1" class="EmptyPane"></div>
 
                     	<div class="row">
                         	<div class="col-sm-9">
-                            	<div id="dnn_theLibraryContent2" class="DNNEmptyPane"></div>
+                            	<div id="dnn_theLibraryContent2" class="EmptyPane"></div>
                             </div>
                             <div class="col-sm-3">
-                            	<div id="dnn_theLibraryContent3" class="DNNEmptyPane"></div>
+                            	<div id="dnn_theLibraryContent3" class="EmptyPane"></div>
                             </div>
                         </div>
                     </div>
@@ -306,8 +306,8 @@
 
             	<div class="row">
                 	<div class="col-sm-12">
-                    	<div id="dnn_ContentPaneNew"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97284 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97284_ContentPane"><!-- Start_Module_97284 --><div id="dnn_ctr97284_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                    	<div id="dnn_ContentPaneNew"><div class="  -97284 ">
+<div ><div id="dnn_ctr97284_ContentPane"><!-- Start_Module_97284 --><div id="dnn_ctr97284_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97284_HtmlModule_lblContent"><div class="row row-special-special">
 	<h2> Auxiliary Services</h2>
 	<p>We provide the Clayton State community with a variety of retail and campus services that enhance the overall educational and work experience. Our goal is to always serve you with the highest level of customer service.
@@ -325,49 +325,49 @@
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <div id="dnn_AboutPane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AboutPane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-6">
-                        <div id="dnn_HelpPane" class="DNNEmptyPane"></div>
+                        <div id="dnn_HelpPane" class="EmptyPane"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-9">
-                        <div id="dnn_AuxSvcsSLP1Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSLP1Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSLP2Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSLP2Pane" class="EmptyPane"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcs1Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcs1Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-6">
-                        <div id="dnn_AuxSvcs2Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcs2Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcs3Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcs3Pane" class="EmptyPane"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL1Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSL1Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL2Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSL2Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL3Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSL3Pane" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL4Pane" class="DNNEmptyPane"></div>
+                        <div id="dnn_AuxSvcsSL4Pane" class="EmptyPane"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane1"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97281 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97281_ContentPane"><!-- Start_Module_97281 --><div id="dnn_ctr97281_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div ><div class="  -97281 ">
+<div ><div id="dnn_ctr97281_ContentPane"><!-- Start_Module_97281 --><div id="dnn_ctr97281_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97281_HtmlModule_lblContent"><div class=" col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/auxservices/the-loch-shop" title="The Loch Shop" target="_blank">
@@ -387,8 +387,8 @@ CSU Logo Merchandise</p>
 
 
 
-</div><!-- End_Module_97281 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97286 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97286_ContentPane"><!-- Start_Module_97286 --><div id="dnn_ctr97286_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97281 --></div></div></div><div class="  -97286 ">
+<div ><div id="dnn_ctr97286_ContentPane"><!-- Start_Module_97286 --><div id="dnn_ctr97286_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97286_HtmlModule_lblContent"><div class=" col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/auxservices/dine-csu" title="DineCSU" target="_blank">
@@ -406,8 +406,8 @@ Catering</p>
 
 
 
-</div><!-- End_Module_97286 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97289 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97289_ContentPane"><!-- Start_Module_97289 --><div id="dnn_ctr97289_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97286 --></div></div></div><div class="  -97289 ">
+<div ><div id="dnn_ctr97289_ContentPane"><!-- Start_Module_97289 --><div id="dnn_ctr97289_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97289_HtmlModule_lblContent"><div class=" col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/auxservices/smartprint" title="SmartPrint" target="_blank">
@@ -428,8 +428,8 @@ SmartPrint Support</p>
 </div><!-- End_Module_97289 --></div></div></div></div>
                     </div>
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane2"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97282 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97282_ContentPane"><!-- Start_Module_97282 --><div id="dnn_ctr97282_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div ><div class="  -97282 ">
+<div ><div id="dnn_ctr97282_ContentPane"><!-- Start_Module_97282 --><div id="dnn_ctr97282_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97282_HtmlModule_lblContent"><div class="col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/auxservices/laker-card" title="LakerCard" target="_blank" style="margin: 0px auto; display: inline-block;">
@@ -446,8 +446,8 @@ Using your LakerCard </p>
 
 
 
-</div><!-- End_Module_97282 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97287 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97287_ContentPane"><!-- Start_Module_97287 --><div id="dnn_ctr97287_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97282 --></div></div></div><div class="  -97287 ">
+<div ><div id="dnn_ctr97287_ContentPane"><!-- Start_Module_97287 --><div id="dnn_ctr97287_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97287_HtmlModule_lblContent"><div class=" col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/auxservices/info" title="Auxiliary Services Info" target="_blank">
@@ -464,8 +464,8 @@ About </p>
 
 
 
-</div><!-- End_Module_97287 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97290 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97290_ContentPane"><!-- Start_Module_97290 --><div id="dnn_ctr97290_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97287 --></div></div></div><div class="  -97290 ">
+<div ><div id="dnn_ctr97290_ContentPane"><!-- Start_Module_97290 --><div id="dnn_ctr97290_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97290_HtmlModule_lblContent"><div class=" col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/loch" title="Loch" target="_blank">
@@ -485,22 +485,22 @@ Loch Photos</p>
 </div><!-- End_Module_97290 --></div></div></div></div>
                     </div>
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane3"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97283 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97283_ContentPane"><!-- Start_Module_97283 --><div id="dnn_ctr97283_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div ><div class="  -97283 ">
+<div ><div id="dnn_ctr97283_ContentPane"><!-- Start_Module_97283 --><div id="dnn_ctr97283_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97283_HtmlModule_lblContent"><div class=" col-special"> <div class="ih-item square effect3 bottom_to_top"> <a href="/auxservices/lochs-nest" title="Loch's Nest" target="_blank"> <div class="img"> <img src="images/Loch-Nest-Tile.jpg" alt="Loch's Nest" class="img-rounded"></div> <div class="info"> <p>Snacks &amp; Beverages<br>CSU Logo Merchandise<br>Convenience Items</p> </div> </a> </div> </div></div>
 
 
 
 
-</div><!-- End_Module_97283 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97288 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97288_ContentPane"><!-- Start_Module_97288 --><div id="dnn_ctr97288_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97283 --></div></div></div><div class="  -97288 ">
+<div ><div id="dnn_ctr97288_ContentPane"><!-- Start_Module_97288 --><div id="dnn_ctr97288_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97288_HtmlModule_lblContent"><div class=" col-special"> <div class="ih-item square effect3 bottom_to_top"> <a href="/auxservices/vending" title="Vending" target="_blank"> <div class="img"><img src="images/Vending.jpg" alt="Vending" class="img-rounded"></div> <div class="info"> <p>Vending Locations<br>Vending Support<br>Refunds </p> </div> </a> </div> </div></div>
 
 
 
 
-</div><!-- End_Module_97288 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-97291 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97291_ContentPane"><!-- Start_Module_97291 --><div id="dnn_ctr97291_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+</div><!-- End_Module_97288 --></div></div></div><div class="  -97291 ">
+<div ><div id="dnn_ctr97291_ContentPane"><!-- Start_Module_97291 --><div id="dnn_ctr97291_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97291_HtmlModule_lblContent"><div class="col-special">
 <div class="ih-item square effect3 bottom_to_top">
 <a href="http://www.clayton.edu/higher-one" title="HigherOne" target="_blank">
@@ -527,7 +527,7 @@ HigherOne Support </p>
         	<div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div id="dnn_SeeOurWorkPaneTitle"><div class="DnnModule DnnModule-DNN_NewsFeeds DnnModule-100050">
+                        <div ><div class="  -100050">
 <div class="main-news-heading">
     <h2><i class="fa fa-newspaper-o fa-lg"></i>
 
@@ -542,7 +542,7 @@ HigherOne Support </p>
 </div>
 
 <div id="dnn_ctr100050_ContentPane">
-<!-- Start_Module_100050 --><link rel="stylesheet" href="css/home.css" type="text/css"><div id="dnn_ctr100050_ModuleContent" class="DNNModuleContent ModDNNNewsFeedsC">
+<!-- Start_Module_100050 --><link rel="stylesheet" href="css/home.css" type="text/css"><div id="dnn_ctr100050_ModuleContent" class="claytonModuleContent ModNewsFeedsC">
 	<div id="dnn_ctr100050_RssModule_pnlRss">
 
 
@@ -558,15 +558,15 @@ HigherOne Support </p>
 </div></div>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div id="dnn_PortfolioPane" class="DNNEmptyPane"></div>
+                                    <div id="dnn_PortfolioPane" class="EmptyPane"></div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div id="dnn_PhotoGalleryPane" class="DNNEmptyPane"></div>
+                                    <div id="dnn_PhotoGalleryPane" class="EmptyPane"></div>
                                 </div>
                             </div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_SpotlightPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97307 DnnVersionableControl">
+                        <div ><div class="  -97307 ">
 <div class="main-news-heading">
     <h2><i class="fa fa-newspaper-o fa-lg"></i>
 
@@ -579,7 +579,7 @@ HigherOne Support </p>
 </div>
 
 <div id="dnn_ctr97307_ContentPane">
-<!-- Start_Module_97307 --><div id="dnn_ctr97307_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+<!-- Start_Module_97307 --><div id="dnn_ctr97307_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97307_HtmlModule_lblContent"><p><a href="http://www.clayton.edu/auxservices/info">Auxiliary Services Information</a></p>
 <p><a href=" https://jfe.qualtrics.com/form/SV_cBXDpHGrVKbbL49">Tell us how we're doing!</a></p></div>
 
@@ -591,8 +591,8 @@ HigherOne Support </p>
 </div></div>
                     </div>
                     <div class="col-sm-3">
-                            <div id="dnn_ContactPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-97304 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr97304_ContentPane"><!-- Start_Module_97304 --><div id="dnn_ctr97304_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                            <div id="dnn_ContactPane"><div class="  -97304 ">
+<div ><div id="dnn_ctr97304_ContentPane"><!-- Start_Module_97304 --><div id="dnn_ctr97304_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr97304_HtmlModule_lblContent"></div>
 
 
@@ -606,10 +606,10 @@ HigherOne Support </p>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div id="dnn_AnotherPane1" class="DNNEmptyPane"></div>
+                        <div id="dnn_AnotherPane1" class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-6">
-                         <div id="dnn_AnotherPane2" class="DNNEmptyPane"></div>
+                         <div id="dnn_AnotherPane2" class="EmptyPane"></div>
                     </div>
                 </div>
            </div>
@@ -620,10 +620,10 @@ HigherOne Support </p>
         	<div class="container-fluid">
             <div class="row clear-fix">
                 <div class="col-sm-3">
-                    <div id="dnn_IHeartLochPane1" class="DNNEmptyPane"></div>
+                    <div id="dnn_IHeartLochPane1" class="EmptyPane"></div>
                 </div>
                 <div class="col-sm-9">
-                     <div id="dnn_IHeartLochPane2" class="DNNEmptyPane"></div>
+                     <div id="dnn_IHeartLochPane2" class="EmptyPane"></div>
                 </div>
             </div>
             </div>
@@ -633,7 +633,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_HeadingSlideshow" class="DNNEmptyPane"></div>
+                <div id="dnn_HeadingSlideshow" class="EmptyPane"></div>
             </div>
         </div>
    </div>
@@ -641,7 +641,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_EmergencyAnnouncement" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_EmergencyAnnouncement" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -649,13 +649,13 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-6 no-padding">
-                <div id="dnn_LakerNewsRoomPane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_LakerNewsRoomPane" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-3 no-padding">
-                <div id="dnn_AdmissionsPane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_AdmissionsPane" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-3 no-padding">
-                <div id="dnn_EventsPane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="EventsPane" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -663,7 +663,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_DescriptiveButtonsPane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_DescriptiveButtonsPane" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -673,15 +673,15 @@ HigherOne Support </p>
     	<div class="container-fluid">
         	<div class="row clear-fix">
                 <div class="col-sm-12">
-                    <div id="dnn_Heading" class="heading DNNEmptyPane"></div>
+                    <div id="dnn_Heading" class="heading EmptyPane"></div>
                 </div>
             </div>
             <div class="row clear-fix">
                 <div class="col-sm-6">
-                    <div id="dnn_GiveDreamsHeading1" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_GiveDreamsHeading1" class="pane-spacing EmptyPane"></div>
                 </div>
                 <div class="col-sm-6">
-                    <div id="dnn_GiveDreamsHeading2" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_GiveDreamsHeading2" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
 
@@ -693,18 +693,18 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="container-fluid">
                 <div class="col-sm-12">
-                    <div id="dnn_GiveForDreams" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_GiveForDreams" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
         </div>
 		<div class="row clear-fix">
         	<div class="container-fluid">
                 <div class="col-sm-8">
-                    <div id="dnn_homepageSpotlightLeft" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_homepageSpotlightLeft" class="pane-spacing EmptyPane"></div>
                  </div>
 
                 <div class="col-sm-4">
-                  <div id="dnn_homepageSpotlightRight" class="pane-spacing DNNEmptyPane"></div>
+                  <div id="dnn_homepageSpotlightRight" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
         </div>
@@ -714,7 +714,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_edgewhiterow" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_edgewhiterow" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -724,7 +724,7 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="container-fluid">
                 <div class="col-sm-12">
-                    <div id="dnn_edgegrayrow" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_edgegrayrow" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
         </div>
@@ -733,47 +733,47 @@ HigherOne Support </p>
 
     <div class="container-fluid clear-fix">
         <div class="row clear-fix">
-            <div id="dnn_LeftPane" class="col-sm-3 leftpane-col pane-spacing DNNEmptyPane">
+            <div id="dnn_LeftPane" class="col-sm-3 leftpane-col pane-spacing EmptyPane">
             </div>
             <div class="sidebar-container last clear-fix">
-                <div id="dnn_SlideshowPane" class="col-sm-12 sidebar pane-spacing DNNEmptyPane">
+                <div id="dnn_SlideshowPane" class="col-sm-12 sidebar pane-spacing EmptyPane">
             </div>
             <div class="row clear-fix">
-                <div id="dnn_MenuPane" class="col-sm-3 collapse-first sidebar pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_MenuPane" class="col-sm-3 collapse-first sidebar pane-spacing EmptyPane"></div>
                 <div class="sidebar-container clear-fix">
-                    <div id="dnn_SidePane3a" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing DNNEmptyPane">
+                    <div id="dnn_SidePane3a" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing EmptyPane">
                     </div>
                     <div class="sidebar-container clear-fix">
-                        <div id="dnn_SidePane" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing DNNEmptyPane">
+                        <div id="dnn_SidePane" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing EmptyPane">
                         </div>
                         <div class="sidebar-container clear-fix">
-                            <div id="dnn_ContentPane" class="collapse-first content-pane sidebar clear-fix pane-spacing DNNEmptyPane">
+                            <div  class="collapse-first content-pane sidebar clear-fix pane-spacing EmptyPane">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row clear-fix">
-                <div id="dnn_ThreeColCol3Pane" class="col-sm-4 collapse-first threecol-col3 pane-spacing DNNEmptyPane">
+                <div id="dnn_ThreeColCol3Pane" class="col-sm-4 collapse-first threecol-col3 pane-spacing EmptyPane">
                 </div>
                 <div class="sidebar-container clear-fix">
-                    <div id="dnn_ThreeColCol2Pane" class="col-sm-4 collapse-first threecol-col2 pane-spacing DNNEmptyPane">
+                    <div id="dnn_ThreeColCol2Pane" class="col-sm-4 collapse-first threecol-col2 pane-spacing EmptyPane">
                     </div>
                     <div class="sidebar-container clear-fix">
-                        <div id="dnn_ThreeColCol1Pane" class="threecol-col1 pane-spacing DNNEmptyPane">
+                        <div id="dnn_ThreeColCol1Pane" class="threecol-col1 pane-spacing EmptyPane">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row clear-fix">
-                <div id="dnn_RightContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing DNNEmptyPane">
+                <div id="dnn_RightContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing EmptyPane">
                 </div>
-                <div id="dnn_LeftContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing DNNEmptyPane">
+                <div id="dnn_LeftContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing EmptyPane">
                 </div>
             </div>
             <div class="row clear-fix">
                 <div class="col-sm-12">
-                    <div id="dnn_Bottom100Pane" class="bottom-100 pane-spacing DNNEmptyPane">
+                    <div id="dnn_Bottom100Pane" class="bottom-100 pane-spacing EmptyPane">
                     </div>
                 </div>
             </div>
@@ -784,7 +784,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomHeadingPane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomHeadingPane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -793,10 +793,10 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-9">
-                <div id="dnn_newsroomHeadingPane2" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomHeadingPane2" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-3">
-                <div id="dnn_newsroomHeadingPane3" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomHeadingPane3" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -804,56 +804,56 @@ HigherOne Support </p>
     <div class="container-fluid">
 		<div class="row clear-fix">
         	<div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePaneNested" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomFeaturePaneNested" class="pane-spacing EmptyPane"></div>
                 	<div class="row clear-fix">
                         <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons6" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons6" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons7" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons7" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-8">
-                            <div id="dnn_insidePicturesPane" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_insidePicturesPane" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-4">
-                            <div id="dnn_insideAreasPane" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_insideAreasPane" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons1" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons1" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons2" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons2" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons3" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons3" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons4" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons4" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons5" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons5" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons8" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons8" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons9" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons9" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons10" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_newsroomDeptButtons10" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
              </div>
        	 	<div class="col-sm-4">
-              <div id="dnn_newsroomSideTopicPane1Nested" class="pane-spacing DNNEmptyPane"></div>
+              <div id="dnn_newsroomSideTopicPane1Nested" class="pane-spacing EmptyPane"></div>
 			</div>
         </div>
     </div>
@@ -861,46 +861,46 @@ HigherOne Support </p>
     <div class="container-fluid">
 		<div class="row clear-fix">
         	<div class="col-sm-9">
-                <div id="dnn_ninecolDesignNested" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_ninecolDesignNested" class="pane-spacing EmptyPane"></div>
                 	<div class="row clear-fix">
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNested" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNested" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-9">
-                            <div id="dnn_ninecolNineColNested" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_ninecolNineColNested" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol1Nested" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_sixcolNineCol1Nested" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol2Nested" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_sixcolNineCol2Nested" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedLeft" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedLeft" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedMiddle" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedMiddle" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedRight" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedRight" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFarRight" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedFarRight" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRow" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_twelvecolNineNestedSingleRow" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
              </div>
 
        	 	<div class="col-sm-3">
-              <div id="dnn_threecolNested" class="pane-spacing DNNEmptyPane"></div>
+              <div id="dnn_threecolNested" class="pane-spacing EmptyPane"></div>
 			</div>
         </div>
     </div>
@@ -910,68 +910,68 @@ HigherOne Support </p>
 		<div class="row clear-fix">
 
        	 	<div class="col-sm-3">
-              <div id="dnn_threecolNestedFlip" class="pane-spacing DNNEmptyPane"></div>
+              <div id="dnn_threecolNestedFlip" class="pane-spacing EmptyPane"></div>
 			</div>
 
             <div class="col-sm-9">
-                <div id="dnn_ninecolDesignNestedFlip" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_ninecolDesignNestedFlip" class="pane-spacing EmptyPane"></div>
                 	<div class="row clear-fix">
                         <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-9">
-                            <div id="dnn_ninecolNineColNestedFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_ninecolNineColNestedFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol1NestedFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_sixcolNineCol1NestedFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol2NestedFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_sixcolNineCol2NestedFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip1" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_twelvecolNineNestedSingleRowFlip1" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedLeftFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedLeftFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedMiddleFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedMiddleFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedRightFlip" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedRightFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                         <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedFarRightFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip2" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedLeftFlip1" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedMiddleFlip2" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedRightFlip3" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFarRightFlip4" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_threecolNineNestedFarRightFlip" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
                     <div class="row clear-fix">
                         <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip3" class="pane-spacing DNNEmptyPane"></div>
+                            <div id="dnn_twelvecolNineNestedSingleRowFlip2" class="pane-spacing EmptyPane"></div>
+                        </div>
+                    </div>
+                    <div class="row clear-fix">
+                        <div class="col-sm-3">
+                            <div id="dnn_threecolNineNestedLeftFlip1" class="pane-spacing EmptyPane"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="dnn_threecolNineNestedMiddleFlip2" class="pane-spacing EmptyPane"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="dnn_threecolNineNestedRightFlip3" class="pane-spacing EmptyPane"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="dnn_threecolNineNestedFarRightFlip4" class="pane-spacing EmptyPane"></div>
+                        </div>
+                    </div>
+                    <div class="row clear-fix">
+                        <div class="col-sm-12">
+                            <div id="dnn_twelvecolNineNestedSingleRowFlip3" class="pane-spacing EmptyPane"></div>
                         </div>
                     </div>
              </div>
@@ -982,22 +982,22 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-md-2 col-md-offset-1">
-                <div id="dnn_trans1Pane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_trans1Pane" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-md-2">
-                <div id="dnn_trans2Pane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_trans2Pane" class="pane-spacing EmptyPane">
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="dnn_trans3Pane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_trans3Pane" class="pane-spacing EmptyPane">
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="dnn_trans4Pane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_trans4Pane" class="pane-spacing EmptyPane">
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="dnn_trans5Pane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_trans5Pane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1007,10 +1007,10 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePane" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomFeaturePane" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane1" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSideTopicPane1" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1019,13 +1019,13 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-6">
-                <div id="dnn_newsroomFeaturePane1" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomFeaturePane1" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane5" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomSideTopicPane5" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane6" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomSideTopicPane6" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -1034,7 +1034,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomOnePane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomOnePane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1043,13 +1043,13 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol1" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_TemplateThreeCol1" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol2" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_TemplateThreeCol2" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol3" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_TemplateThreeCol3" class="pane-spacing EmptyPane"></div>
             </div>
         </div>
     </div>
@@ -1057,10 +1057,10 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePane2" class="pane-spacing DNNEmptyPane"></div>
+                <div id="dnn_newsroomFeaturePane2" class="pane-spacing EmptyPane"></div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane7" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSideTopicPane7" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1070,16 +1070,16 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="col-sm-9">
                 <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane1" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNewsReleasesPane1" class="pane-spacing EmptyPane">
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane2" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNewsReleasesPane2" class="pane-spacing EmptyPane">
                 </div>
             </div>
             </div>
             <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane2" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSideTopicPane2" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1089,19 +1089,19 @@ HigherOne Support </p>
             <div class="row clear-fix">
                 <div class="col-sm-12">
                     <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane1" class="pane-spacing DNNEmptyPane">
+                        <div id="dnn_templateFourColPane1" class="pane-spacing EmptyPane">
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane2" class="pane-spacing DNNEmptyPane">
+                        <div id="dnn_templateFourColPane2" class="pane-spacing EmptyPane">
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane3" class="pane-spacing DNNEmptyPane">
+                        <div id="dnn_templateFourColPane3" class="pane-spacing EmptyPane">
                         </div>
                     </div>
                     <div class="col-sm-3">
-                    <div id="dnn_templateFourColPane4" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_templateFourColPane4" class="pane-spacing EmptyPane">
                     </div>
                 </div>
                 </div>
@@ -1113,7 +1113,7 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="container-fluid">
                 <div class="col-sm-12">
-                    <div id="dnn_newsroomPaneGray1" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_newsroomPaneGray1" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
         </div>
@@ -1122,7 +1122,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomTwoPane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomTwoPane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1132,7 +1132,7 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="container-fluid">
                 <div class="col-sm-12">
-                    <div id="dnn_newsroomPaneGray2" class="pane-spacing DNNEmptyPane"></div>
+                    <div id="dnn_newsroomPaneGray2" class="pane-spacing EmptyPane"></div>
                 </div>
             </div>
         </div>
@@ -1142,16 +1142,16 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="col-sm-9">
                 <div class="col-sm-4">
-                    <div id="dnn_newsroomNRP" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNRP" class="pane-spacing EmptyPane">
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div id="dnn_newsroomNRP2" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNRP2" class="pane-spacing EmptyPane">
                 </div>
             </div>
             </div>
             <div class="col-sm-3">
-                <div id="dnn_newsroomSTP" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSTP" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1160,7 +1160,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomNRP100" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomNRP100" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1169,11 +1169,11 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-8">
-                <div id="dnn_newsroomNewsReleasesPane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomNewsReleasesPane" class="pane-spacing EmptyPane">
                 </div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane3" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSideTopicPane3" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1182,7 +1182,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomThreePane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomThreePane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1192,16 +1192,16 @@ HigherOne Support </p>
         <div class="row clear-fix">
             <div class="col-sm-8">
                 <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane3" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNewsReleasesPane3" class="pane-spacing EmptyPane">
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane4" class="pane-spacing DNNEmptyPane">
+                    <div id="dnn_newsroomNewsReleasesPane4" class="pane-spacing EmptyPane">
                 </div>
             </div>
             </div>
             <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane4" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomSideTopicPane4" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1210,7 +1210,7 @@ HigherOne Support </p>
     <div class="container-fluid">
         <div class="row clear-fix">
             <div class="col-sm-12">
-                <div id="dnn_newsroomFourPane" class="pane-spacing DNNEmptyPane">
+                <div id="dnn_newsroomFourPane" class="pane-spacing EmptyPane">
                 </div>
             </div>
         </div>
@@ -1226,7 +1226,7 @@ HigherOne Support </p>
 		<div class="container-fluid">
 			<div class="row clear-fix">
 				<div class="col-sm-12">
-					<div id="dnn_contactInformationUndergrad" class="pane-spacing DNNEmptyPane">
+					<div id="dnn_contactInformationUndergrad" class="pane-spacing EmptyPane">
 					</div>
 				</div>
 			</div>

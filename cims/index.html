@@ -31,14 +31,14 @@
 		<script src="../js/jquery.js" type="text/javascript"></script>
 		<script src="../js/jquery-ui.js" type="text/javascript"></script>
 		<script src="../js/appinsights.js" type="text/javascript"></script>
-		<script src="../js/dnn.js" type="text/javascript"></script>
-		<script src="../js/dnn.modalpopup.js" type="text/javascript"></script>
+		<script src="../js/clayton.js" type="text/javascript"></script>
+		<script src="../js/clayton.modalpopup.js" type="text/javascript"></script>
 		<script src="../js/CustomSearch.js" type="text/javascript"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.bootstrap.js" type="text/javascript"></script>
-		<script src="../js/dnncore.js" type="text/javascript"></script>
-		<script src="../js/dnn.servicesframework.js" type="text/javascript"></script>
+		<script src="../js/clayton-core.js" type="text/javascript"></script>
+		<script src="../js/clayton.servicesframework.js" type="text/javascript"></script>
 		<script src="../js/scripts.js" type="text/javascript"></script>
 		<script src="../js/outboundGA.js" type="text/javascript"></script>
 		<script src="../js/jquery.flexslider-min.js"></script>
@@ -49,7 +49,7 @@
 	</head>
 
 	<body id="Body">
-		<form method="post" action="/" id="Form" enctype="multipart/form-data">
+		
 			<div id="siteWrapper" class="container-fluid">
 
 			<header>
@@ -87,7 +87,7 @@
 										</h1>
 									</div><!-- / #logo -->
 									<div class="searchArea" role="navigation" aria-label="Secondary CSU Menu">
-										<div id="dnnMenu" style="position: static; left: 0px;">
+										<div id="claytonMenu" style="position: static; left: 0px;">
 											<ul class="nav navbar-nav topLevel sm" data-smartmenus-id="15065261956596768">
 												<li><a href="/students"><span>Students</span></a></li>
 												<li><a href="/faculty-staff"><span>Faculty &amp; Staff</span></a></li>
@@ -112,10 +112,10 @@
 								<div id="stamatsMenu">
 									<ul class="navTopLevel" role="menubar">
 										<li class="dropdown" role="menuitem">
-											<a href="/about" role="button" id="ddrmenu_link_1" aria-owns="ddrmenu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
+											<a href="/about" role="button" id="menu_link_1" aria-owns="menu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
 												<span class="blueBack">About CSU<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_1" aria-labelledby="ddrmenu_link_1" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_1" aria-labelledby="menu_link_1" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/about/dreams-made-real" role="button" class="child1"><span>Dreams. Made Real.</span></a></li>
 												<li role="menuitem"><a href="/about/visit" role="button" class="child2"><span>Visit Us</span></a></li>
 												<li role="menuitem"><a href="/about/history-and-traditions" role="button" class="child3"><span>History &amp; Traditions</span></a></li>
@@ -129,10 +129,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/academics" role="button" id="ddrmenu_link_2" aria-owns="ddrmenu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
+											<a href="/academics" role="button" id="menu_link_2" aria-owns="menu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
 												<span class="blueBack">Academics<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_2" aria-labelledby="ddrmenu_link_2" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_2" aria-labelledby="menu_link_2" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/academics/undergraduate-study" role="button" class="child1"><span>Undergraduate Study</span></a></li>
 												<li role="menuitem"><a href="/academics/degrees-majors-and-certificates" role="button" class="child2"><span>Degrees, Majors &amp; Certificates</span></a></li>
 												<li role="menuitem"><a href="/academics/graduate-study" role="button" class="child3"><span>Graduate Study</span></a></li>
@@ -144,10 +144,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/admissions" role="button" id="ddrmenu_link_3" aria-owns="ddrmenu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
+											<a href="/admissions" role="button" id="menu_link_3" aria-owns="menu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
 												<span class="blueBack">Admissions<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_3" aria-labelledby="ddrmenu_link_3" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_3" aria-labelledby="menu_link_3" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/admissions/undergraduate" role="button" class="child1"><span>Undergraduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/graduate/apply" role="button" class="child2"><span>Graduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/ce" role="button" class="child3"><span>Continuing Education</span></a></li>
@@ -163,10 +163,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/student-life" role="button" id="ddrmenu_link_4" aria-owns="ddrmenu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
+											<a href="/student-life" role="button" id="menu_link_4" aria-owns="menu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
 												<span class="blueBack">Student Life<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_4" aria-labelledby="ddrmenu_link_4" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_4" aria-labelledby="menu_link_4" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/student-life/books-and-dining" role="button" class="child1"><span>Books &amp; Dining</span></a></li>
 												<li role="menuitem"><a href="/student-life/arts-and-culture" role="button" class="child2"><span>Arts &amp; Culture</span></a></li>
 												<li role="menuitem"><a href="/housing" role="button" class="child3"><span>University Housing</span></a></li>
@@ -185,10 +185,10 @@
 											</a>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/alumni" role="button" id="ddrmenu_link_6" aria-owns="ddrmenu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
+											<a href="/alumni" role="button" id="menu_link_6" aria-owns="menu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
 												<span class="blueBack">Alumni<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_6" aria-labelledby="ddrmenu_link_6" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_6" aria-labelledby="menu_link_6" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/alumni/events" role="button" class="child1"><span>Events</span></a></li>
 												<li role="menuitem"><a href="/alumni/get-involved" role="button" class="child2"><span>Get Involved</span></a></li>
 												<li role="menuitem"><a href="/alumni/stay-connected" role="button" class="child3"><span>Stay Connected</span></a></li>
@@ -213,7 +213,7 @@
 		<main>
 			<div class="row rowPadding">
 				<div class="collegeWidth">
-					<div id="dnn_collegeHeaderPane" class="collegeHeader col-md-12 DNNEmptyPane"></div>
+					<div id="dnn_collegeHeaderPane" class="collegeHeader col-md-12 EmptyPane"></div>
 
 <div class="collegeHeader col-md-12 sc-cb-pane-glow">
 <h1><a href="/cims">College of Information and Mathematical Sciences</a></h1>
@@ -264,8 +264,8 @@
 			</div>
 			<div class="row">
 				<div class="departmentHero no-gutter">
-					<div id="dnn_mainHeroImage" class="mainImageLarge"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141530 DnnVersionableControl"><a name="141530"></a>
-<div class="Invisible"><div id="dnn_ctr141530_ContentPane"><!-- Start_Module_141530 --><div id="dnn_ctr141530_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div id="dnn_mainHeroImage" class="mainImageLarge"><div class="  -141530 "><a name="141530"></a>
+<div ><div id="dnn_ctr141530_ContentPane"><!-- Start_Module_141530 --><div id="dnn_ctr141530_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141530_HtmlModule_lblContent"><div class="heroContainer"><a href="/cims/cims/programs"><img alt="Robtics" height="700" src="images/cimsHeroImage.jpg" width="1900"> <div class="heroCenteredHome"> <div class="col-sm-11 heroButton"> <p class="heroHeading">Be tomorrow&rsquo;s technology innovator, educator, and industry leader</p> </div> </div> </a></div> </div>
 
 
@@ -276,8 +276,8 @@
 			</div>
 			<div class="row rowPadding">
 				<div class="contentWidth row-flex">
-					<div class="col-md-6 col-sm-4 col-xs-12 col-md-push-4"><div class="flexContent"><div id="dnn_contentEvents" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141532 DnnVersionableControl"><a name="141532"></a>
-<div class="Invisible"><div id="dnn_ctr141532_ContentPane"><!-- Start_Module_141532 --><div id="dnn_ctr141532_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-md-6 col-sm-4 col-xs-12 col-md-push-4"><div class="flexContent"><div id="dnn_contentEvents" class="contentPane"><div class="  -141532 "><a name="141532"></a>
+<div ><div id="dnn_ctr141532_ContentPane"><!-- Start_Module_141532 --><div id="dnn_ctr141532_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141532_HtmlModule_lblContent"><div class="headingTwoContainer">
 <div class="headingTwo">
 <h2>Programs</h2>
@@ -311,8 +311,8 @@ Financial Technology makes it possible to electronically invest, insure and bank
 
 
 </div><!-- End_Module_141532 --></div></div></div></div></div></div>
-					<div class="col-md-3 col-sm-4 col-xs-12 col-md-pull-4"><div class="flexContent"><div id="dnn_contentPrograms" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141531 DnnVersionableControl"><a name="141531"></a>
-<div class="Invisible"><div id="dnn_ctr141531_ContentPane"><!-- Start_Module_141531 --><div id="dnn_ctr141531_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-md-3 col-sm-4 col-xs-12 col-md-pull-4"><div class="flexContent"><div id="dnn_contentPrograms" class="contentPane"><div class="  -141531 "><a name="141531"></a>
+<div ><div id="dnn_ctr141531_ContentPane"><!-- Start_Module_141531 --><div id="dnn_ctr141531_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141531_HtmlModule_lblContent"><div class="headingTwoContainer">
 <div class="headingTwo">
 <h2>Events</h2>
@@ -333,8 +333,8 @@ var adx="Events are temporarily unavailable. Please check back later.";
 jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalendar/EventListSyndicator.aspx?type=N&number=5&category=7-16&department=8&adjustmultidayevents=Y&expire=Y&showCanc=Y&ics=Y&adpid=1017&nem=No+events+are+available+that+match+your+request&sortorder=ASC&browser=new&ver=2.0&target=adx050161'
 });setTimeout(function() {if(typeof response=='undefined'){jQuery('#adx050161').html(adx);}}, 5000);
 });}else { document.getElementById('adx050161').innerHTML = 'Events are temporarily unavailable because the jQuery library cannot be located.'; }</script><!-- End_Module_141531 --></div></div></div></div></div></div>
-					<div class="col-md-3 col-sm-4 col-xs-12"><div class="flexContent"><div id="dnn_contentAction" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141534 DnnVersionableControl"><a name="141534"></a>
-<div class="Invisible"><div id="dnn_ctr141534_ContentPane"><!-- Start_Module_141534 --><div id="dnn_ctr141534_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-md-3 col-sm-4 col-xs-12"><div class="flexContent"><div id="dnn_contentAction" class="contentPane"><div class="  -141534 "><a name="141534"></a>
+<div ><div id="dnn_ctr141534_ContentPane"><!-- Start_Module_141534 --><div id="dnn_ctr141534_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141534_HtmlModule_lblContent"><div class="headingTwoContainer">
 	<div class="headingTwo">
 		<h2>Take Action</h2>
@@ -356,8 +356,8 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 			</div>
 			<div class="row rowPadding">
 				<div id="bytheNumbers" class="bytheNumbers">
-					<div class="col-sm-3"><div id="dnn_bytheNumbersText"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141535 DnnVersionableControl"><a name="141535"></a>
-<div class="Invisible"><div id="dnn_ctr141535_ContentPane"><!-- Start_Module_141535 --><div id="dnn_ctr141535_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-sm-3"><div id="dnn_bytheNumbersText"><div class="  -141535 "><a name="141535"></a>
+<div ><div id="dnn_ctr141535_ContentPane"><!-- Start_Module_141535 --><div id="dnn_ctr141535_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141535_HtmlModule_lblContent"><p class="bytheNumbersHeading"><span class="span2">College of Information and Mathematical Sciences</span><br><span class="span25">where our students work</span>
 </p></div>
 
@@ -365,8 +365,8 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 
 </div><!-- End_Module_141535 --></div></div></div></div></div>
-					<div class="col-sm-3"><div id="dnn_bytheNumbersOne"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141536 DnnVersionableControl"><a name="141536"></a>
-<div class="Invisible"><div id="dnn_ctr141536_ContentPane"><!-- Start_Module_141536 --><div id="dnn_ctr141536_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-sm-3"><div id="dnn_bytheNumbersOne"><div class="  -141536 "><a name="141536"></a>
+<div ><div id="dnn_ctr141536_ContentPane"><!-- Start_Module_141536 --><div id="dnn_ctr141536_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141536_HtmlModule_lblContent"><p><span class="numberHeadingCIMS">CNN, AT&T, Georgia Bureau of Investigation, Coca-Cola, MailChimp</span><br>
 	<span style="font-size:larger;">Computer Science and IT graduates</span>
 </p></div>
@@ -375,8 +375,8 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 
 </div><!-- End_Module_141536 --></div></div></div></div></div>
-					<div class="col-sm-3"><div id="dnn_bytheNumbersTwo"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141537 DnnVersionableControl"><a name="141537"></a>
-<div class="Invisible"><div id="dnn_ctr141537_ContentPane"><!-- Start_Module_141537 --><div id="dnn_ctr141537_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-sm-3"><div id="dnn_bytheNumbersTwo"><div class="  -141537 "><a name="141537"></a>
+<div ><div id="dnn_ctr141537_ContentPane"><!-- Start_Module_141537 --><div id="dnn_ctr141537_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141537_HtmlModule_lblContent"><p><span class="numberHeadingCIMS">Chick-fil-A, Suntrust, Fox Theatre, Georgia Archives, University of Pennsylvania Archives</span><br>
 	<span style="font-size:larger;">Archival Studies graduates</span>
 </p></div>
@@ -385,8 +385,8 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 
 </div><!-- End_Module_141537 --></div></div></div></div></div>
-					<div class="col-sm-3"><div id="dnn_bytheNumbersThree"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141538 DnnVersionableControl"><a name="141538"></a>
-<div class="Invisible"><div id="dnn_ctr141538_ContentPane"><!-- Start_Module_141538 --><div id="dnn_ctr141538_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div class="col-sm-3"><div id="dnn_bytheNumbersThree"><div class="  -141538 "><a name="141538"></a>
+<div ><div id="dnn_ctr141538_ContentPane"><!-- Start_Module_141538 --><div id="dnn_ctr141538_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141538_HtmlModule_lblContent"><p><span class="numberHeadingCIMS">Public School Systems in Henry, Fayette, Clayton, Dekalb, and Gwinnett counties</span><br>
 	<span style="font-size:larger;">Mathematics Education graduates</span>
 </p></div>
@@ -399,8 +399,8 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 			</div>
 			<div class="row rowPadding">
 				<div class="contentWidth latestHeadlines">
-					<div id="dnn_latestHeadlinesHeading"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141540 DnnVersionableControl"><a name="141540"></a>
-<div class="Invisible"><div id="dnn_ctr141540_ContentPane"><!-- Start_Module_141540 --><div id="dnn_ctr141540_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+					<div id="dnn_latestHeadlinesHeading"><div class="  -141540 "><a name="141540"></a>
+<div ><div id="dnn_ctr141540_ContentPane"><!-- Start_Module_141540 --><div id="dnn_ctr141540_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141540_HtmlModule_lblContent"><div class="textCenter">
 <h2>Latest Headlines</h2>
 </div></div>
@@ -409,9 +409,9 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 
 </div><!-- End_Module_141540 --></div></div></div></div>
-					<div id="dnn_ContentPane"><div class="DnnModule DnnModule-2sxc-app DnnModule-141553 DnnVersionableControl"><a name="141553"></a>
-<div class="Invisible"><div id="dnn_ctr141553_ContentPane"><!-- Start_Module_141553 --><div id="dnn_ctr141553_ModuleContent" class="DNNModuleContent Mod2sxcappC">
-	<div class="sc-viewport sc-content-block" data-cb-instance="141553" data-cb-id="141553">
+					<div ><div class=" -2sxc-app -141553 "><a name="141553"></a>
+<div ><div id="dnn_ctr141553_ContentPane"><!-- Start_Module_141553 --><div id="dnn_ctr141553_ModuleContent" class="claytonModuleContent ">
+	<div class=" " data-cb-instance="141553" data-cb-id="141553">
 <div class="row departmentNews">
 
 </div>
@@ -458,8 +458,8 @@ $(document).ready(function(){
     </div>
 	<section class="row majorTestimonial">
 		<div class="contentWidth">
-			<div id="dnn_TestimonialPane" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141539 DnnVersionableControl"><a name="141539"></a>
-<div class="Invisible"><div id="dnn_ctr141539_ContentPane"><!-- Start_Module_141539 --><div id="dnn_ctr141539_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+			<div  class="contentPane"><div class="  -141539 "><a name="141539"></a>
+<div ><div id="dnn_ctr141539_ContentPane"><!-- Start_Module_141539 --><div id="dnn_ctr141539_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141539_HtmlModule_lblContent"><div class="col-sm-4"><img alt="Aaron Panlilio" src="images/a-panlilio.jpg"></div>
 
 <div class="col-sm-6">

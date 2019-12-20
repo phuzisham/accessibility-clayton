@@ -23,33 +23,38 @@
 		<link href="../css/all.css" rel="stylesheet">
 		<link href="../css/featherlight.css" type="text/css" rel="stylesheet">
 		<link href="../css/flexslider.css" type="text/css" rel="stylesheet">
+		<link href="../css/carousel-styles.css" rel="stylesheet">
+		<link href="../css/undergrad-styles.css" rel="stylesheet">
+		<link href="../css/skin-two.css" rel="stylesheet">
 
 		<script src="../axd/WebResource.axd" type="text/javascript"></script>
 		<script src="../axd/ScriptResource.axd" type="text/javascript"></script>
 		<script src="../axd/ScriptResource_1.axd" type="text/javascript"></script>
 
 		<script src="../js/jquery.js" type="text/javascript"></script>
+		<script src="../js/carousel.js"type="text/javascript" ></script>
 		<script src="../js/jquery-ui.js" type="text/javascript"></script>
 		<script src="../js/appinsights.js" type="text/javascript"></script>
-		<script src="../js/dnn.js" type="text/javascript"></script>
-		<script src="../js/dnn.modalpopup.js" type="text/javascript"></script>
+		<script src="../js/clayton.js" type="text/javascript"></script>
+		<script src="../js/clayton.modalpopup.js" type="text/javascript"></script>
 		<script src="../js/CustomSearch.js" type="text/javascript"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.bootstrap.js" type="text/javascript"></script>
-		<script src="../js/dnncore.js" type="text/javascript"></script>
-		<script src="../js/dnn.servicesframework.js" type="text/javascript"></script>
+		<script src="../js/clayton-core.js" type="text/javascript"></script>
+		<script src="../js/clayton.servicesframework.js" type="text/javascript"></script>
 		<script src="../js/scripts.js" type="text/javascript"></script>
 		<script src="../js/outboundGA.js" type="text/javascript"></script>
 		<script src="../js/jquery.flexslider-min.js"></script>
 		<script src="../js/featherlight.js"></script>
+		<script src="../js/navXjsClient.js"></script>
 
 		<script async src="../js/2024953.js" type="text/javascript"></script>
 		<script async src="../js/bottom-scripts.js" type="text/javascript"></script>
 	</head>
 
 	<body id="Body">
-		<form method="post" action="/" id="Form" enctype="multipart/form-data">
+		
 			<div id="siteWrapper" class="container-fluid">
 
 			<header>
@@ -87,7 +92,7 @@
 										</h1>
 									</div><!-- / #logo -->
 									<div class="searchArea" role="navigation" aria-label="Secondary CSU Menu">
-										<div id="dnnMenu" style="position: static; left: 0px;">
+										<div id="claytonMenu" style="position: static; left: 0px;">
 											<ul class="nav navbar-nav topLevel sm" data-smartmenus-id="15065261956596768">
 												<li><a href="/students"><span>Students</span></a></li>
 												<li><a href="/faculty-staff"><span>Faculty &amp; Staff</span></a></li>
@@ -112,10 +117,10 @@
 								<div id="stamatsMenu">
 									<ul class="navTopLevel" role="menubar">
 										<li class="dropdown" role="menuitem">
-											<a href="/about" role="button" id="ddrmenu_link_1" aria-owns="ddrmenu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
+											<a href="/about" role="button" id="menu_link_1" aria-owns="menu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
 												<span class="blueBack">About CSU<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_1" aria-labelledby="ddrmenu_link_1" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_1" aria-labelledby="menu_link_1" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/about/dreams-made-real" role="button" class="child1"><span>Dreams. Made Real.</span></a></li>
 												<li role="menuitem"><a href="/about/visit" role="button" class="child2"><span>Visit Us</span></a></li>
 												<li role="menuitem"><a href="/about/history-and-traditions" role="button" class="child3"><span>History &amp; Traditions</span></a></li>
@@ -129,10 +134,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/academics" role="button" id="ddrmenu_link_2" aria-owns="ddrmenu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
+											<a href="/academics" role="button" id="menu_link_2" aria-owns="menu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
 												<span class="blueBack">Academics<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_2" aria-labelledby="ddrmenu_link_2" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_2" aria-labelledby="menu_link_2" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/academics/undergraduate-study" role="button" class="child1"><span>Undergraduate Study</span></a></li>
 												<li role="menuitem"><a href="/academics/degrees-majors-and-certificates" role="button" class="child2"><span>Degrees, Majors &amp; Certificates</span></a></li>
 												<li role="menuitem"><a href="/academics/graduate-study" role="button" class="child3"><span>Graduate Study</span></a></li>
@@ -144,10 +149,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/admissions" role="button" id="ddrmenu_link_3" aria-owns="ddrmenu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
+											<a href="/admissions" role="button" id="menu_link_3" aria-owns="menu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
 												<span class="blueBack">Admissions<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_3" aria-labelledby="ddrmenu_link_3" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_3" aria-labelledby="menu_link_3" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/admissions/undergraduate" role="button" class="child1"><span>Undergraduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/graduate/apply" role="button" class="child2"><span>Graduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/ce" role="button" class="child3"><span>Continuing Education</span></a></li>
@@ -163,10 +168,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/student-life" role="button" id="ddrmenu_link_4" aria-owns="ddrmenu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
+											<a href="/student-life" role="button" id="menu_link_4" aria-owns="menu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
 												<span class="blueBack">Student Life<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_4" aria-labelledby="ddrmenu_link_4" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_4" aria-labelledby="menu_link_4" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/student-life/books-and-dining" role="button" class="child1"><span>Books &amp; Dining</span></a></li>
 												<li role="menuitem"><a href="/student-life/arts-and-culture" role="button" class="child2"><span>Arts &amp; Culture</span></a></li>
 												<li role="menuitem"><a href="/housing" role="button" class="child3"><span>University Housing</span></a></li>
@@ -185,10 +190,10 @@
 											</a>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/alumni" role="button" id="ddrmenu_link_6" aria-owns="ddrmenu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
+											<a href="/alumni" role="button" id="menu_link_6" aria-owns="menu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
 												<span class="blueBack">Alumni<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_6" aria-labelledby="ddrmenu_link_6" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_6" aria-labelledby="menu_link_6" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/alumni/events" role="button" class="child1"><span>Events</span></a></li>
 												<li role="menuitem"><a href="/alumni/get-involved" role="button" class="child2"><span>Get Involved</span></a></li>
 												<li role="menuitem"><a href="/alumni/stay-connected" role="button" class="child3"><span>Stay Connected</span></a></li>
@@ -209,1174 +214,335 @@
 			<!-- end header -->
 
       <!-- Page Content -->
-      <div id="content">
-
-	<div class="container-fluid" id="UASliderStyle">
-		<div id="dnn_UASlider"><div class="DnnModule DnnModule-DNN_HTML DnnModule-137819 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr137819_ContentPane"><!-- Start_Module_137819 --><link href="css/carousel-styles.css" rel="stylesheet">
-<style>
-.clipped {
-display:none;
-}
-#carousel {
-    background-color: white;
-    margin: 0 auto;
-}
-#carousel .slide .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    padding: 0.75em 1.5em;
-    height: auto;
-    max-height: 100px;
-    position: absolute;
-    top: 36%;
-    width: 100%;
-}
-#carousel .slide .description p.title {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
-#carousel .slide .description p.cta {
-    font-size: 1em;
-    margin-bottom: 0;
-}
-#carousel .slide .description .row {
-    background-color: #000000a6;
-padding: 10px;
-}
-.lentils li.active button {
-    background-color: #fc6719;
-    border-color: #none;
-    color: black;
-    cursor: pointer;
-}
-.lentils button {
-    border: none;
-    background-color: #092c74;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 0px;
-}
-ul.lentils {
-    list-style-type: none;
-    margin-top: 0;
-    float: right;
-}
-#carousel ul {
-    padding: 40px 0;
-    margin-bottom: 0px;
-}
-.lentils li {
-    display: inline-block;
-    margin: 0 0.5em;
-}
-.btn-next {
-    right: 0;
-    border-radius: .25em 0 0 .25em;
-    transform: scaleX(-1);
-}
-.btn-prev, .btn-next {
-    position: absolute;
-    z-index: 20;
-    top: 50%;
-    border: 0;
-    padding: 0;
-    background-color: white;
-    transition: padding .4s ease-out;
-}
-@media (max-width:991px) {
-	#carousel .slide .description {height: auto;}
-}
-</style><div id="dnn_ctr137819_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr137819_HtmlModule_lblContent"><div class="row">
-<div class="col-sm-12">
-<div class="row">
-<div aria-label="Admissions Carousel" id="carousel" role="region">
-<h2 class="clipped" id="carouselHeading" style="color: #ffffff;">Featured Story Slideshow</h2>
-
-<div class="slide"><a href="/admissions/undergraduate-admissions/visit"><img alt="Visit us on campus" height="700" src="images/dreams-test.jpeg" width="1200"></a></div>
-
-<div class="slide"><a href="/academics/degrees-majors-and-certificates"><img alt="Choose a major that supports your dream" height="700" src="images/Admissions-48Majors-Banner.jpg" width="1200"></a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-</div><script type="text/javascript" src="js/carousel.js"></script><!-- End_Module_137819 --></div></div></div></div>
-	</div>
-
-	<div class="container-fluid" id="UANavigationStyle">
-		<div id="dnn_UANavigation" class="contentWidth"><div class="DnnModule DnnModule-avtNavXp DnnModule-137818">
-<div class="Invisible"><div id="dnn_ctr137818_ContentPane"><!-- Start_Module_137818 --><style>
-div#mast-head {
-    background-color: #ddd;
-text-align:center;
-}
-div#dnn_ctr141461_NavXp_menuRender {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
-}
-.navxp_HB_SimpleText_default .sepBk {
-    border-left: 0px;
-}
-.navxp_HB_SimpleText.navxp_HB_SimpleText_default.NavXpRoot {
-    margin-bottom: 0;
-    margin-left: 0;
-    overflow: hidden;
-    text-align: center;
-    list-style: none;
-    float: none;
-    padding: 10px;
-}
-.navxp_HB_SimpleText_default a.itemL0:link, .navxp_HB_SimpleText_default a.itemL0:visited {
-    position: static;
-    display: inline-block;
-    font-size: 15px;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-@media (max-width:1067px) {
-.navxp_HB_SimpleText_default a.itemL0:link, .navxp_HB_SimpleText_default a.itemL0:visited {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0 auto;
-}
-}
-@media (max-width:887px) {
-	.navxp_HB_SimpleText_default a.itemL0:link, .navxp_HB_SimpleText_default a.itemL0:visited {
-    width: 100%;
-}
-}
-</style><div id="dnn_ctr137818_ModuleContent" class="DNNModuleContent ModavtNavXpC">
-	<div id="dnn_ctr137818_NavXp_pnlErr"></div>
-<div id="dnn_ctr137818_NavXp_menuRender"><div style class="navxp_HB_SimpleText navxp_HB_SimpleText_default NavXpRoot"><a class="itemL0 nxp-first nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/visit">Visit</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/apply">Application Requirements</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-link nxp-no-child" href="http/admissions/request-information">Request Information</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/tuition-aid-and-scholarships">Tuition, Aid, & Scholarships</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/application-status">Application Status</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/admitted-students">Admitted Students</a><div class="sepBk">&nbsp;</div><a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/apply/freshmen/forms">Forms</a><div class="sepBk">&nbsp;</div><a class="itemL0 nxp-last nxp-lvl0 nxp-link nxp-no-child" href="https://gafutures.xap.com/applications/usg/usg_common_app_short/introduction.asp?application_id=3387" target="_blank">Apply Now</a><div style="clear: both"></div></div></div>
-
-
-</div><!-- End_Module_137818 --></div></div></div></div>
-	</div>
-
-	<div class="container-fluid" id="uaOtherStyle">
-			<div id="dnn_UAHOther"><div class="DnnModule DnnModule-DNN_HTML DnnModule-137815 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr137815_ContentPane"><!-- Start_Module_137815 --><div id="dnn_ctr137815_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr137815_HtmlModule_lblContent"><div class="contentWidth" style="margin-top:40px;">
-	<div class="col-sm-12">
-		<h1>Undergraduate Admissions</h1>
-		<p>You may be new to college or returning to finish an undergraduate degree. You may be transferring between schools or transferring between countries. Whatever your situation, Clayton State has an academic program for you and all the help and resources you need to begin your application process. All dreams are welcome. Let’s get you started on yours!
-		</p>
-	</div>
-</div></div>
-
-
-
-
-</div><!-- End_Module_137815 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-139893 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr139893_ContentPane"><!-- Start_Module_139893 --><style>
-@media (max-width:768px) {
-.heroImage .message {
-    margin-top: 53%;
-}
-}
-</style><div id="dnn_ctr139893_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr139893_HtmlModule_lblContent"><div class="contentWidth" style="padding:50px 0;"> <div class="row"> <div class="newsEvents"> <div class="col-xs-12 text-center"> <h2>Explore Clayton State</h2> </div> </div> </div> <div class="row"> <div class="col-sm-4 box-hover"> <div class="figure-container"><a href="http://claytonstate.university-tour.com/?pk_campaign=Web-Undergrad%20Admissions&pk_source=Web-Undergrad%20Admissions"><img alt="Virtual Viewbook" class="figure-image" src="images/virtual-VB.jpg" style="width:100%"></a> <div class="figure-middle"> <div class="figure-text"><a href="http://claytonstate.university-tour.com/?pk_campaign=Web-Undergrad%20Admissions&pk_source=Web-Undergrad%20Admissions">Virtual Viewbook</a></div> </div> </div> </div> <div class="col-sm-4 box-hover"> <div class="figure-container"><a href="https://www.youtube.com/watch?time_continue=1&amp;v=YfbhyMEiO_Y" target="_blank"><img alt="Dreams Made Real" class="figure-image" src="images/dare-to-dream-image.jpg" style="width:100%"></a> <div class="figure-middle"> <div class="figure-text play-button"><a href="https://www.youtube.com/watch?time_continue=1&amp;v=YfbhyMEiO_Y" target="_blank">&nbsp;</a></div> </div> </div> </div> <div class="col-sm-4 box-hover"> <div class="figure-container"><a href="/academics/degrees-majors-and-certificates"><img alt="Find Your Dream" class="figure-image" src="images/find-your-dream-image.jpg" style="width:100%"></a> <div class="figure-middle"> <div class="figure-text"><a href="/academics/degrees-majors-and-certificates">Find Your Major</a></div> </div> </div> </div> </div> </div> </div>
-
-
-
-
-</div><!-- End_Module_139893 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-137816 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr137816_ContentPane"><!-- Start_Module_137816 --><style type="text/css">
-.callToAction-UA {padding:0;min-height:0;}
-.callToAction-UA .contentWidth {
-    max-width: 1270px;
-}
-.callToAction-UA .flip .front {
-    backface-visibility: hidden;
-    padding-top: 140px;
-    padding-top: 20%;
-}
-.callToAction-UA .flip h3 {
-    font-size: 24px;
-    font-weight: 400;
-    color: #ffffff;
-	text-shadow: 2px 2px #000;
-	background-color: rgba(0,0,0,0.4);
-	padding:15px 0 15px 0;
-}
-.callToAction-UA .flip, .callToAction-UA .flip .front, .callToAction-UA .flip .back {
-    min-height: 225px;
-    width: 100%;
-    max-width: 405px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.callToAction-UA .flip.apply .front {
-	background-image: url('/Portals/_default/Skins/Clayton_Stamats/Images/PencilIcon.png');
-}
-.callToAction-UA .flip.viewBook .front {
-    background-image: url('/Portals/_default/Skins/Clayton_Stamats/Images/BookIcon.png');
-}
-.callToAction-UA .flip.moreInfo .front {
-    background-image: url('/Portals/_default/Skins/Clayton_Stamats/Images/EnvelopeIcon.png');
-}
-</style><div id="dnn_ctr137816_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr137816_HtmlModule_lblContent"><div class="contentWidth">
-	<div class="newsEvents">
-		<div class="col-xs-12 text-center">
-			<h2>Let's Make it Real</h2>
-		</div>
-	</div>
-</div> <section class="callToAction-UA no-gutter">
-<div class="contentWidth">
-	<div class="row">
-		<div class="col-xs-12 col-sm-4 text-center flipHolder"> <a class="flip apply" href="/admissions/undergraduate-admissions/apply">
-			<div class="front">
-				<h3>Apply</h3>
-			</div>
-			<!-- / .front -->
-			<div class="back">
-			</div>
-			<!-- / .back -->
-			</a>
-			<!-- / .flip.apply -->
-		</div>
-		<!-- / .col-xs-12 -->
-		<div class="col-xs-12 col-sm-4 text-center flipHolder"> <a class="flip viewBook" href="/admissions/undergraduate-admissions/visit">
-			<div class="front">
-				<h3>Visit</h3>
-			</div>
-			<!-- / .front -->
-			<div class="back">
-			</div>
-			<!-- / .back -->
-			</a>
-			<!-- / .flip.viewBook -->
-		</div>
-		<!-- / .col-xs-12 -->
-		<div class="col-xs-12 col-sm-4 text-center flipHolder"> <a class="flip moreInfo" href="/admissions/request-information">
-			<div class="front">
-				<h3>Request Information</h3>
-			</div>
-			<!-- / .front -->
-			<div class="back">
-			</div>
-			<!-- / .back -->
-			</a>
-			<!-- / .flip.moreInfo -->
-		</div>
-		<!-- / .contentWidth -->
-	</div>
-</div>
-<!-- / .col-xs-12 -->
-</section></div>
-
-
-
-
-</div><!-- End_Module_137816 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-139894 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr139894_ContentPane"><!-- Start_Module_139894 --><div id="dnn_ctr139894_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr139894_HtmlModule_lblContent"><div class="contentWidth" style="padding:50px 0;">
-<div class="row">
-<div class="newsEvents">
-<div class="col-xs-12 text-center">
-<h2>Next Steps</h2>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-sm-4 box-hover">
-<div class="figure-container">
-	<a href="/admissions/undergraduate-admissions/application-status"><img src="images/application-status-box.jpg" alt="Application Status" class="figure-image" style="width:100%"></a>
-  <div class="figure-middle">
-	  <div class="figure-text"><a href="/admissions/undergraduate-admissions/application-status">Application Status</a></div>
-  </div>
-</div>
-</div>
-
-<div class="col-sm-4 box-hover">
-<div class="figure-container">
-  <a href="/admissions/undergraduate-admissions/admitted-students"><img src="images/admitted-student-box.jpg" alt="Admitted Students" class="figure-image" style="width:100%"></a>
-  <div class="figure-middle">
-	  <div class="figure-text"><a href="/admissions/undergraduate-admissions/admitted-students">Admitted Students</a></div>
-  </div>
-</div>
-</div>
-
-<div class="col-sm-4 box-hover">
-<div class="figure-container">
-  <a href="/admissions/tuition-aid-and-scholarships"><img src="images/tution-aid-scholarships-box.jpg" alt="Tuition, Aid and Scholarships" class="figure-image" style="width:100%"></a>
-  <div class="figure-middle">
-	  <div class="figure-text"><a href="/admissions/tuition-aid-and-scholarships">Tuition, Aid, &amp; Scholarships</a></div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-</div><!-- End_Module_139894 --></div></div></div></div>
-	</div>
-
-    <div class="container-fluid contentWidth" id="mainContent" tabindex="-1">
-
-        <div class="container-fluid">
-        	<div id="dnn_CoverImagePane" class="DNNEmptyPane"></div>
-            <div id="mast-head"><div id="dnn_SiteTitlePane" class="flex-caption DNNEmptyPane"></div></div>
-        </div>
-
-        <div id="tabs-container">
-        	<div class="container-fluid">
-            	<div class="row">
-            		<div id="dnn_TabsPane" class="DNNEmptyPane"></div>
-            	</div>
-        	</div>
-        </div>
-
-        <div id="giveNavBlue-container">
-        	<div class="container-fluid">
-            	<div class="row">
-                	<div class="col-sm-9">
-            			<div id="dnn_giveNavBluePane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                    	<div id="dnn_giveNavBluePane2" class="DNNEmptyPane"></div>
-                    </div>
-            	</div>
-        	</div>
-        </div>
-
-        <div id="giveNav-container">
-        	<div class="container-fluid">
-            	<div class="row">
-                	<div class="col-sm-9">
-            			<div id="dnn_giveNavPane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                    	<div id="dnn_giveNavPane2" class="DNNEmptyPane"></div>
-                    </div>
-            	</div>
-        	</div>
-        </div>
-
-        <div id="about-container">
-        	<div class="container-fluid">
-            	<div class="row">
-                	<div class="col-sm-9">
-                    	<div id="dnn_GiveDreamsPane1" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                    	<div id="dnn_GiveDreamsPane2" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                	<div class="col-sm-8">
-                    	<div id="dnn_GiveDreamsPane3" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-4">
-                    	<div id="dnn_GiveDreamsPane4" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                	<div class="col-sm-3">
-                    	<div id="dnn_theLibraryNavigation" class="DNNEmptyPane"></div>
-                    </div>
-
-                    <div class="col-sm-9">
-                    	<div id="dnn_theLibraryContent1" class="DNNEmptyPane"></div>
-
-                    	<div class="row">
-                        	<div class="col-sm-9">
-                            	<div id="dnn_theLibraryContent2" class="DNNEmptyPane"></div>
-                            </div>
-                            <div class="col-sm-3">
-                            	<div id="dnn_theLibraryContent3" class="DNNEmptyPane"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            	<div class="row">
-                	<div class="col-sm-12">
-                    	<div id="dnn_ContentPaneNew" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div id="dnn_AboutPane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div id="dnn_HelpPane" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-9">
-                        <div id="dnn_AuxSvcsSLP1Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSLP2Pane" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcs1Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div id="dnn_AuxSvcs2Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcs3Pane" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL1Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL2Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL3Pane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_AuxSvcsSL4Pane" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div id="dnn_ContentPane1" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div id="dnn_ContentPane2" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div id="dnn_ContentPane3" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="work-container">
-
-        	<div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div id="dnn_SeeOurWorkPaneTitle" class="DNNEmptyPane"></div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div id="dnn_PortfolioPane" class="DNNEmptyPane"></div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div id="dnn_PhotoGalleryPane" class="DNNEmptyPane"></div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_SpotlightPane" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-3">
-                            <div id="dnn_ContactPane" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div id="dnn_AnotherPane1" class="DNNEmptyPane"></div>
-                    </div>
-                    <div class="col-sm-6">
-                         <div id="dnn_AnotherPane2" class="DNNEmptyPane"></div>
-                    </div>
-                </div>
-           </div>
-
-        </div>
-
-        <div id="iHeartLoch">
-        	<div class="container-fluid">
-            <div class="row clear-fix">
-                <div class="col-sm-3">
-                    <div id="dnn_IHeartLochPane1" class="DNNEmptyPane"></div>
-                </div>
-                <div class="col-sm-9">
-                     <div id="dnn_IHeartLochPane2" class="DNNEmptyPane"></div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <!--University Homepage Template-->
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_HeadingSlideshow" class="DNNEmptyPane"></div>
-            </div>
-        </div>
-   </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_EmergencyAnnouncement" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-6 no-padding">
-                <div id="dnn_LakerNewsRoomPane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-3 no-padding">
-                <div id="dnn_AdmissionsPane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-3 no-padding">
-                <div id="dnn_EventsPane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_DescriptiveButtonsPane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-   <!--All other page template-->
-    <div class="heading-container">
-    	<div class="container-fluid">
-        	<div class="row clear-fix">
-                <div class="col-sm-12">
-                    <div id="dnn_Heading" class="heading DNNEmptyPane"></div>
-                </div>
-            </div>
-            <div class="row clear-fix">
-                <div class="col-sm-6">
-                    <div id="dnn_GiveDreamsHeading1" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-                <div class="col-sm-6">
-                    <div id="dnn_GiveDreamsHeading2" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-
-       	</div>
-    </div>
-
-   <!--Dark Grey on Career Services, etc-->
-    <div class="spotlight-container">
-        <div class="row clear-fix">
-            <div class="container-fluid">
-                <div class="col-sm-12">
-                    <div id="dnn_GiveForDreams" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-        </div>
-		<div class="row clear-fix">
-        	<div class="container-fluid">
-                <div class="col-sm-8">
-                    <div id="dnn_homepageSpotlightLeft" class="pane-spacing DNNEmptyPane"></div>
-                 </div>
-
-                <div class="col-sm-4">
-                  <div id="dnn_homepageSpotlightRight" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--White-->
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_edgewhiterow" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-    <!--Gray-->
-    <div class="spotlight-container">
-        <div class="row clear-fix">
-            <div class="container-fluid">
-                <div class="col-sm-12">
-                    <div id="dnn_edgegrayrow" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid clear-fix">
-        <div class="row clear-fix">
-            <div id="dnn_LeftPane" class="col-sm-3 leftpane-col pane-spacing DNNEmptyPane">
-            </div>
-            <div class="sidebar-container last clear-fix">
-                <div id="dnn_SlideshowPane" class="col-sm-12 sidebar pane-spacing DNNEmptyPane">
-            </div>
-            <div class="row clear-fix">
-                <div id="dnn_MenuPane" class="col-sm-3 collapse-first sidebar pane-spacing DNNEmptyPane"></div>
-                <div class="sidebar-container clear-fix">
-                    <div id="dnn_SidePane3a" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing DNNEmptyPane">
-                    </div>
-                    <div class="sidebar-container clear-fix">
-                        <div id="dnn_SidePane" class="col-sm-3 collapse-first sidebar clear-fix pane-spacing DNNEmptyPane">
-                        </div>
-                        <div class="sidebar-container clear-fix">
-                            <div id="dnn_ContentPane" class="collapse-first content-pane sidebar clear-fix pane-spacing DNNEmptyPane">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clear-fix">
-                <div id="dnn_ThreeColCol3Pane" class="col-sm-4 collapse-first threecol-col3 pane-spacing DNNEmptyPane">
-                </div>
-                <div class="sidebar-container clear-fix">
-                    <div id="dnn_ThreeColCol2Pane" class="col-sm-4 collapse-first threecol-col2 pane-spacing DNNEmptyPane">
-                    </div>
-                    <div class="sidebar-container clear-fix">
-                        <div id="dnn_ThreeColCol1Pane" class="threecol-col1 pane-spacing DNNEmptyPane">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clear-fix">
-                <div id="dnn_RightContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing DNNEmptyPane">
-                </div>
-                <div id="dnn_LeftContentPane" class="collapse-first col-sm-6 pane-spacing pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            <div class="row clear-fix">
-                <div class="col-sm-12">
-                    <div id="dnn_Bottom100Pane" class="bottom-100 pane-spacing DNNEmptyPane">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomHeadingPane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-9">
-                <div id="dnn_newsroomHeadingPane2" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-3">
-                <div id="dnn_newsroomHeadingPane3" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-		<div class="row clear-fix">
-        	<div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePaneNested" class="pane-spacing DNNEmptyPane"></div>
-                	<div class="row clear-fix">
-                        <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons6" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons7" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-8">
-                            <div id="dnn_insidePicturesPane" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div id="dnn_insideAreasPane" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons1" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons2" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons3" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons4" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="dnn_newsroomDeptButtons5" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons8" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons9" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div id="dnn_newsroomDeptButtons10" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-             </div>
-       	 	<div class="col-sm-4">
-              <div id="dnn_newsroomSideTopicPane1Nested" class="pane-spacing DNNEmptyPane"></div>
-			</div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-		<div class="row clear-fix">
-        	<div class="col-sm-9">
-                <div id="dnn_ninecolDesignNested" class="pane-spacing DNNEmptyPane"></div>
-                	<div class="row clear-fix">
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNested" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-9">
-                            <div id="dnn_ninecolNineColNested" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol1Nested" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol2Nested" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedLeft" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedMiddle" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedRight" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFarRight" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRow" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-             </div>
-
-       	 	<div class="col-sm-3">
-              <div id="dnn_threecolNested" class="pane-spacing DNNEmptyPane"></div>
-			</div>
-        </div>
-    </div>
-
-    <!--Flip-->
-    <div class="container-fluid">
-		<div class="row clear-fix">
-
-       	 	<div class="col-sm-3">
-              <div id="dnn_threecolNestedFlip" class="pane-spacing DNNEmptyPane"></div>
-			</div>
-
-            <div class="col-sm-9">
-                <div id="dnn_ninecolDesignNestedFlip" class="pane-spacing DNNEmptyPane"></div>
-                	<div class="row clear-fix">
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-9">
-                            <div id="dnn_ninecolNineColNestedFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol1NestedFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="dnn_sixcolNineCol2NestedFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip1" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedLeftFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedMiddleFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedRightFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3 col-xs-3">
-                            <div id="dnn_threecolNineNestedFarRightFlip" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip2" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedLeftFlip1" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedMiddleFlip2" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedRightFlip3" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="dnn_threecolNineNestedFarRightFlip4" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-                    <div class="row clear-fix">
-                        <div class="col-sm-12">
-                            <div id="dnn_twelvecolNineNestedSingleRowFlip3" class="pane-spacing DNNEmptyPane"></div>
-                        </div>
-                    </div>
-             </div>
-
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-md-2 col-md-offset-1">
-                <div id="dnn_trans1Pane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-md-2">
-                <div id="dnn_trans2Pane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="dnn_trans3Pane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="dnn_trans4Pane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="dnn_trans5Pane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePane" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane1" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-6">
-                <div id="dnn_newsroomFeaturePane1" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane5" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane6" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomOnePane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol1" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol2" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_TemplateThreeCol3" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-8">
-                <div id="dnn_newsroomFeaturePane2" class="pane-spacing DNNEmptyPane"></div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane7" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-9">
-                <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane1" class="pane-spacing DNNEmptyPane">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane2" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            </div>
-            <div class="col-sm-3">
-                <div id="dnn_newsroomSideTopicPane2" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-            <div class="row clear-fix">
-                <div class="col-sm-12">
-                    <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane1" class="pane-spacing DNNEmptyPane">
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane2" class="pane-spacing DNNEmptyPane">
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="dnn_templateFourColPane3" class="pane-spacing DNNEmptyPane">
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                    <div id="dnn_templateFourColPane4" class="pane-spacing DNNEmptyPane">
-                    </div>
-                </div>
-                </div>
-
-            </div>
-        </div>
-
-    <div class="spotlight-container">
-        <div class="row clear-fix">
-            <div class="container-fluid">
-                <div class="col-sm-12">
-                    <div id="dnn_newsroomPaneGray1" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomTwoPane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="spotlight-container">
-        <div class="row clear-fix">
-            <div class="container-fluid">
-                <div class="col-sm-12">
-                    <div id="dnn_newsroomPaneGray2" class="pane-spacing DNNEmptyPane"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-9">
-                <div class="col-sm-4">
-                    <div id="dnn_newsroomNRP" class="pane-spacing DNNEmptyPane">
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div id="dnn_newsroomNRP2" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            </div>
-            <div class="col-sm-3">
-                <div id="dnn_newsroomSTP" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomNRP100" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-8">
-                <div id="dnn_newsroomNewsReleasesPane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane3" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomThreePane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-8">
-                <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane3" class="pane-spacing DNNEmptyPane">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div id="dnn_newsroomNewsReleasesPane4" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="dnn_newsroomSideTopicPane4" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row clear-fix">
-            <div class="col-sm-12">
-                <div id="dnn_newsroomFourPane" class="pane-spacing DNNEmptyPane">
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<div class="clear-float"></div>
-
-     </div>
-
-     </div>
-
-	<div class="container-fluid" style="background-color:#404040">
-		<div class="container-fluid">
-			<div class="row clear-fix">
-				<div class="col-sm-12">
-					<div id="dnn_contactInformationUndergrad" class="pane-spacing">
-					<div class="DnnModule DnnModule-DNN_HTML DnnModule-137813 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr137813_ContentPane"><!-- Start_Module_137813 --><div id="dnn_ctr137813_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr137813_HtmlModule_lblContent"><div class="contentWidth">
-	<h2 style=" color:#fff;text-align:center; font-size: 36px;font-weight: 400;">Contact Admissions</h2>
-	<div class="row" style="padding-top: 20px;padding-bottom: 10px;">
-		<div class="col-sm-3" style="border-right:1px solid #fff;">
-			<p style="color:#fff;font-size:larger">Address:
-			</p>
-			<p style="color: #fff;">Office of Admissions<br>
-				Edgewater Hall<br>
-				2000 Clayton State Blvd<br>
-				Morrow, GA 30260
-			</p>
-			<p style="color:#fff;">Phone Number: (678) 466-4115
-			</p>
-			<p style="color:#fff;">Email: <a class="whitelink" href="mailto:csuinfo@clayton.edu">csuinfo@clayton.edu</a>
-			</p>
-		</div>
-		<div class="col-sm-3" style="border-right:1px solid #fff;">
-			<p style="color:#fff;font-size:larger">Hours:
-			</p>
-			<p style="color:#fff">Monday and Tuesday<br>
-				8:00 a.m. - 7:00 p.m.<br>
-				<br>
-				Wednesday and Thursday<br>
-				8:00 a.m. - 5:00 p.m.<br>
-				<br>
-				Friday<br>
-				8:00 a.m. - 2:00 p.m.
-			</p>
-		</div>
-		<div class="col-sm-3">
-			<p style="color:#fff;font-size:larger">Deadlines:
-			</p>
-			<p style="color:#fff;">Fall: July 15<br>
-				Spring: November 15<br>
-				Summer: April 15
-			</p>
-		</div>
-		<div class="col-sm-3" style="border-left:1px solid #fff;min-height: 210px;">
-			<p style="color:#fff;font-size:larger">Social Links:
-			</p>
-			<p><a href="https://www.facebook.com/csuadmissions?fref=ts" style="padding-right: 3px;" target="_blank"><img class="admissions-footer" alt="facebook icon" src="images/facebook.png"></a> <a href="https://twitter.com/ClaytonAdm" style="padding-right: 3px;" target="_blank"><img class="admissions-footer" alt="twitter icon" src="images/twitter.png"></a> <a href="https://www.instagram.com/csuadmission/" target="_blank"><img class="admissions-footer" alt="instagram icon" src="images/instagram.png"></a>
-			</p>
-		</div>
-	</div>
-</div></div>
-
-
-
-
-</div><!-- End_Module_137813 --></div></div></div></div>
+			<div id="content">
+				<div class="container-fluid" id="UASliderStyle">
+					<div id="dnn_UASlider">
+						<div class="  -137819 ">
+							<div >
+								<div id="dnn_ctr137819_ContentPane"><!-- Start_Module_137819 -->
+									<div id="dnn_ctr137819_ModuleContent" class="claytonModuleContent ">
+										<div id="dnn_ctr137819_HtmlModule_lblContent">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="row">
+														<div aria-label="Admissions Carousel" id="carousel" role="region">
+															<h2 class="clipped" id="carouselHeading" style="color: #ffffff;">Featured Story Slideshow</h2>
+															<div class="slide">
+																<a href="/admissions/undergraduate-admissions/visit">
+																	<img alt="Visit us on campus" height="700" src="../images/dreams-test.jpeg" width="1200">
+																</a>
+															</div>
+															<div class="slide">
+																<a href="/academics/degrees-majors-and-certificates">
+																	<img alt="Choose a major that supports your dream" height="700" src="../images/Admissions-48Majors-Banner.jpg" width="1200">
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid" id="UANavigationStyle">
+					<div id="dnn_UANavigation" class="contentWidth">
+						<div class=" -avtNavXp -137818">
+							<div >
+								<div id="dnn_ctr137818_ContentPane"><!-- Start_Module_137818 -->
+									<div id="dnn_ctr137818_ModuleContent" class="claytonModuleContent ModavtNavXpC">
+										<div id="dnn_ctr137818_NavXp_pnlErr"></div>
+										<div id="dnn_ctr137818_NavXp_menuRender">
+											<div style class="navxp_HB_SimpleText navxp_HB_SimpleText_default NavXpRoot">
+												<a class="itemL0 nxp-first nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/visit">Visit</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/apply">Application Requirements</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-link nxp-no-child" href="http/admissions/request-information">Request Information</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/tuition-aid-and-scholarships">Tuition, Aid, & Scholarships</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/application-status">Application Status</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-page nxp-has-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/admitted-students">Admitted Students</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0  nxp-lvl0 nxp-page nxp-no-child" href="https://www.clayton.edu/admissions/undergraduate-admissions/apply/freshmen/forms">Forms</a>
+												<div class="sepBk">&nbsp;</div>
+												<a class="itemL0 nxp-last nxp-lvl0 nxp-link nxp-no-child" href="https://gafutures.xap.com/applications/usg/usg_common_app_short/introduction.asp?application_id=3387" target="_blank">Apply Now</a>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+									</div><!-- End_Module_137818 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid" id="uaOtherStyle">
+					<div id="dnn_UAHOther">
+						<div class="  -137815 ">
+							<div >
+								<div id="dnn_ctr137815_ContentPane"><!-- Start_Module_137815 -->
+									<div id="dnn_ctr137815_ModuleContent" class="claytonModuleContent ">
+										<div id="dnn_ctr137815_HtmlModule_lblContent">
+											<div class="contentWidth" style="margin-top:40px;">
+												<div class="col-sm-12">
+													<h1>Undergraduate Admissions</h1>
+													<p>You may be new to college or returning to finish an undergraduate degree. You may be transferring between schools or transferring between countries. Whatever your situation, Clayton State has an academic program for you and all the help and resources you need to begin your application process. All dreams are welcome. Let’s get you started on yours!</p>
+												</div>
+											</div>
+										</div>
+									</div><!-- End_Module_137815 -->
+								</div>
+							</div>
+						</div>
+						<div class="  -139893 ">
+							<div >
+								<div id="dnn_ctr139893_ContentPane"><!-- Start_Module_139893 -->
+									<div id="dnn_ctr139893_ModuleContent" class="claytonModuleContent ">
+										<div id="dnn_ctr139893_HtmlModule_lblContent">
+											<div class="contentWidth" style="padding:50px 0;">
+												<div class="row">
+													<div class="newsEvents">
+														<div class="col-xs-12 text-center">
+															<h2>Explore Clayton State</h2>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="http://claytonstate.university-tour.com/?pk_campaign=Web-Undergrad%20Admissions&pk_source=Web-Undergrad%20Admissions">
+																<img alt="Virtual Viewbook" class="figure-image" src="../images/virtual-VB.jpg" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text">
+																	<a href="http://claytonstate.university-tour.com/?pk_campaign=Web-Undergrad%20Admissions&pk_source=Web-Undergrad%20Admissions">Virtual Viewbook</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="https://www.youtube.com/watch?time_continue=1&amp;v=YfbhyMEiO_Y" target="_blank">
+																<img alt="Dreams Made Real" class="figure-image" src="../images/dare-to-dream-image.jpg" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text play-button">
+																	<a href="https://www.youtube.com/watch?time_continue=1&amp;v=YfbhyMEiO_Y" target="_blank">&nbsp;</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="/academics/degrees-majors-and-certificates">
+																<img alt="Find Your Dream" class="figure-image" src="../images/find-your-dream-image.jpg" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text">
+																	<a href="/academics/degrees-majors-and-certificates">Find Your Major</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- End_Module_139893 -->
+								</div>
+							</div>
+						</div>
+						<div class="  -137816 ">
+							<div >
+								<div id="dnn_ctr137816_ContentPane"><!-- Start_Module_137816 -->
+									<div id="dnn_ctr137816_ModuleContent" class="claytonModuleContent ">
+										<div id="dnn_ctr137816_HtmlModule_lblContent">
+											<div class="contentWidth">
+												<div class="newsEvents">
+													<div class="col-xs-12 text-center">
+														<h2>Let's Make it Real</h2>
+													</div>
+												</div>
+											</div>
+											<section class="callToAction-UA no-gutter">
+												<div class="contentWidth">
+													<div class="row">
+														<div class="col-xs-12 col-sm-4 text-center flipHolder">
+															<a class="flip apply" href="/admissions/undergraduate-admissions/apply">
+																<div class="front">
+																	<h3>Apply</h3>
+																</div>
+																<!-- / .front -->
+																<div class="back"></div>
+																<!-- / .back -->
+															</a>
+															<!-- / .flip.apply -->
+														</div>
+														<!-- / .col-xs-12 -->
+														<div class="col-xs-12 col-sm-4 text-center flipHolder">
+															<a class="flip viewBook" href="/admissions/undergraduate-admissions/visit">
+																<div class="front">
+																	<h3>Visit</h3>
+																</div>
+																<!-- / .front -->
+																<div class="back"></div>
+																<!-- / .back -->
+															</a>
+															<!-- / .flip.viewBook -->
+														</div>
+														<!-- / .col-xs-12 -->
+														<div class="col-xs-12 col-sm-4 text-center flipHolder">
+															<a class="flip moreInfo" href="/admissions/request-information">
+																<div class="front">
+																	<h3>Request Information</h3>
+																</div>
+																<!-- / .front -->
+																<div class="back"></div>
+																<!-- / .back -->
+															</a>
+															<!-- / .flip.moreInfo -->
+														</div>
+														<!-- / .contentWidth -->
+													</div>
+												</div>
+												<!-- / .col-xs-12 -->
+											</section>
+										</div>
+									</div><!-- End_Module_137816 -->
+								</div>
+							</div>
+						</div>
+						<div class="  -139894 ">
+							<div >
+								<div id="dnn_ctr139894_ContentPane"><!-- Start_Module_139894 -->
+									<div id="dnn_ctr139894_ModuleContent" class="claytonModuleContent ">
+										<div id="dnn_ctr139894_HtmlModule_lblContent">
+											<div class="contentWidth" style="padding:50px 0;">
+												<div class="row">
+													<div class="newsEvents">
+														<div class="col-xs-12 text-center">
+															<h2>Next Steps</h2>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="/admissions/undergraduate-admissions/application-status">
+																<img src="../images/application-status-box.jpg" alt="Application Status" class="figure-image" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text">
+																	<a href="/admissions/undergraduate-admissions/application-status">Application Status</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="/admissions/undergraduate-admissions/admitted-students">
+																<img src="../images/admitted-student-box.jpg" alt="Admitted Students" class="figure-image" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text">
+																	<a href="/admissions/undergraduate-admissions/admitted-students">Admitted Students</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 box-hover">
+														<div class="figure-container">
+															<a href="/admissions/tuition-aid-and-scholarships">
+																<img src="../images/tution-aid-scholarships-box.jpg" alt="Tuition, Aid and Scholarships" class="figure-image" style="width:100%">
+															</a>
+															<div class="figure-middle">
+																<div class="figure-text">
+																	<a href="/admissions/tuition-aid-and-scholarships">Tuition, Aid, &amp; Scholarships</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- End_Module_139894 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid" style="background-color:#404040">
+					<div class="container-fluid">
+						<div class="row clear-fix">
+							<div class="col-sm-12">
+								<div id="dnn_contactInformationUndergrad" class="pane-spacing">
+									<div class="  -137813 ">
+										<div >
+											<div id="dnn_ctr137813_ContentPane"><!-- Start_Module_137813 -->
+												<div id="dnn_ctr137813_ModuleContent" class="claytonModuleContent ">
+													<div id="dnn_ctr137813_HtmlModule_lblContent">
+														<div class="contentWidth">
+															<h2 style=" color:#fff;text-align:center; font-size: 36px;font-weight: 400;">Contact Admissions</h2>
+															<div class="row" style="padding-top: 20px;padding-bottom: 10px;">
+																<div class="col-sm-3" style="border-right:1px solid #fff;">
+																	<p style="color:#fff;font-size:larger">Address:</p>
+																	<p style="color: #fff;">Office of Admissions<br>
+																		Edgewater Hall<br>
+																		2000 Clayton State Blvd<br>
+																		Morrow, GA 30260
+																	</p>
+																	<p style="color:#fff;">Phone Number: (678) 466-4115</p>
+																	<p style="color:#fff;">Email: <a class="whitelink" href="mailto:csuinfo@clayton.edu">csuinfo@clayton.edu</a></p>
+																</div>
+																<div class="col-sm-3" style="border-right:1px solid #fff;">
+																	<p style="color:#fff;font-size:larger">Hours:</p>
+																	<p style="color:#fff">Monday and Tuesday<br>
+																		8:00 a.m. - 7:00 p.m.<br>
+																		<br>
+																		Wednesday and Thursday<br>
+																		8:00 a.m. - 5:00 p.m.<br>
+																		<br>
+																		Friday<br>
+																		8:00 a.m. - 2:00 p.m.
+																	</p>
+																</div>
+																<div class="col-sm-3">
+																	<p style="color:#fff;font-size:larger">Deadlines:</p>
+																	<p style="color:#fff;">Fall: July 15<br>
+																		Spring: November 15<br>
+																		Summer: April 15
+																	</p>
+																</div>
+																<div class="col-sm-3" style="border-left:1px solid #fff;min-height: 210px;">
+																	<p style="color:#fff;font-size:larger">Social Links:</p>
+																	<p><a href="https://www.facebook.com/csuadmissions?fref=ts" style="padding-right: 3px;" target="_blank">
+																		<img class="admissions-footer" alt="facebook icon" src="../images/facebook.png">
+																	</a>
+																	<a href="https://twitter.com/ClaytonAdm" style="padding-right: 3px;" target="_blank">
+																		<img class="admissions-footer" alt="twitter icon" src="../images/twitter.png">
+																	</a>
+																	<a href="https://www.instagram.com/csuadmission/" target="_blank">
+																		<img class="admissions-footer" alt="instagram icon" src="../images/instagram.png">
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><!-- End_Module_137813 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-</div>
         <!-- End Page Content -->
 
       	<!-- Footer -->

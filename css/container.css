@@ -24,7 +24,7 @@
 .c_DNN6_Aside .Top{background:url(../images/Grey-Gradient-T.png) repeat-x 0 0;padding:10px 0 0 0;}
 .c_DNN6_Aside .Bottom{height: 10px;background:url(../images/Grey-Gradient-B.png) repeat-x left top;padding:0 0 0 0;}
 .c_DNN6_Aside .Middle {border-left:solid 1px #c6c6c6;border-right:solid 1px #FFF;background:-moz-linear-gradient(top, #e5e5e5, #d7d7d7);background:-webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d7d7d7));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e5e5e5', endColorstr='#d7d7d7');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e5e5e5', endColorstr='#d7d7d7')";height:100%;}
-.c_DNN6_Aside .DNNModuleContent{padding:0 12px;}
+.c_DNN6_Aside .claytonModuleContent{padding:0 12px;}
 .AdminActions input, .AdminActions a.CommandButton{text-decoration:none;}
 
 /*  Banner Rotator
@@ -32,10 +32,10 @@
     -- the desired images into a Text/HTML module using the Banner Container. */
 
  /* Set height of div.Normal to equal the height of banners + 34px for shadow */
-.RotatorWrapper div.DNNModuleContent > div.Normal {height:339px;background:url(../images/Slide-Shadow.png) no-repeat 0 bottom;}
+.RotatorWrapper div.claytonModuleContent > div.Normal {height:339px;background:url(../images/Slide-Shadow.png) no-repeat 0 bottom;}
 
  /* Set width and height of banners within div.Normal img */
-.RotatorWrapper div.DNNModuleContent > div.Normal img{width:960px;height:305px;}
+.RotatorWrapper div.claytonModuleContent > div.Normal img{width:960px;height:305px;}
 
 .RotatorNav {position:absolute;z-index:20;width:960px;height:40px;background:url(../images/50black.png) repeat top left;margin:-74px 0 0;padding:0;list-style: none;}
 .RotatorNav li {float:left;}

@@ -31,14 +31,14 @@
 		<script src="../js/jquery.js" type="text/javascript"></script>
 		<script src="../js/jquery-ui.js" type="text/javascript"></script>
 		<script src="../js/appinsights.js" type="text/javascript"></script>
-		<script src="../js/dnn.js" type="text/javascript"></script>
-		<script src="../js/dnn.modalpopup.js" type="text/javascript"></script>
+		<script src="../js/clayton.js" type="text/javascript"></script>
+		<script src="../js/clayton.modalpopup.js" type="text/javascript"></script>
 		<script src="../js/CustomSearch.js" type="text/javascript"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.bootstrap.js" type="text/javascript"></script>
-		<script src="../js/dnncore.js" type="text/javascript"></script>
-		<script src="../js/dnn.servicesframework.js" type="text/javascript"></script>
+		<script src="../js/clayton-core.js" type="text/javascript"></script>
+		<script src="../js/clayton.servicesframework.js" type="text/javascript"></script>
 		<script src="../js/scripts.js" type="text/javascript"></script>
 		<script src="../js/outboundGA.js" type="text/javascript"></script>
 		<script src="../js/jquery.flexslider-min.js"></script>
@@ -49,7 +49,7 @@
 	</head>
 
 	<body id="Body">
-		<form method="post" action="/" id="Form" enctype="multipart/form-data">
+		
 			<div id="siteWrapper" class="container-fluid">
 
 			<header>
@@ -87,7 +87,7 @@
 										</h1>
 									</div><!-- / #logo -->
 									<div class="searchArea" role="navigation" aria-label="Secondary CSU Menu">
-										<div id="dnnMenu" style="position: static; left: 0px;">
+										<div id="claytonMenu" style="position: static; left: 0px;">
 											<ul class="nav navbar-nav topLevel sm" data-smartmenus-id="15065261956596768">
 												<li><a href="/students"><span>Students</span></a></li>
 												<li><a href="/faculty-staff"><span>Faculty &amp; Staff</span></a></li>
@@ -112,10 +112,10 @@
 								<div id="stamatsMenu">
 									<ul class="navTopLevel" role="menubar">
 										<li class="dropdown" role="menuitem">
-											<a href="/about" role="button" id="ddrmenu_link_1" aria-owns="ddrmenu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
+											<a href="/about" role="button" id="menu_link_1" aria-owns="menu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
 												<span class="blueBack">About CSU<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_1" aria-labelledby="ddrmenu_link_1" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_1" aria-labelledby="menu_link_1" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/about/dreams-made-real" role="button" class="child1"><span>Dreams. Made Real.</span></a></li>
 												<li role="menuitem"><a href="/about/visit" role="button" class="child2"><span>Visit Us</span></a></li>
 												<li role="menuitem"><a href="/about/history-and-traditions" role="button" class="child3"><span>History &amp; Traditions</span></a></li>
@@ -129,10 +129,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/academics" role="button" id="ddrmenu_link_2" aria-owns="ddrmenu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
+											<a href="/academics" role="button" id="menu_link_2" aria-owns="menu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
 												<span class="blueBack">Academics<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_2" aria-labelledby="ddrmenu_link_2" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_2" aria-labelledby="menu_link_2" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/academics/undergraduate-study" role="button" class="child1"><span>Undergraduate Study</span></a></li>
 												<li role="menuitem"><a href="/academics/degrees-majors-and-certificates" role="button" class="child2"><span>Degrees, Majors &amp; Certificates</span></a></li>
 												<li role="menuitem"><a href="/academics/graduate-study" role="button" class="child3"><span>Graduate Study</span></a></li>
@@ -144,10 +144,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/admissions" role="button" id="ddrmenu_link_3" aria-owns="ddrmenu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
+											<a href="/admissions" role="button" id="menu_link_3" aria-owns="menu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
 												<span class="blueBack">Admissions<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_3" aria-labelledby="ddrmenu_link_3" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_3" aria-labelledby="menu_link_3" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/admissions/undergraduate" role="button" class="child1"><span>Undergraduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/graduate/apply" role="button" class="child2"><span>Graduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/ce" role="button" class="child3"><span>Continuing Education</span></a></li>
@@ -163,10 +163,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/student-life" role="button" id="ddrmenu_link_4" aria-owns="ddrmenu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
+											<a href="/student-life" role="button" id="menu_link_4" aria-owns="menu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
 												<span class="blueBack">Student Life<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_4" aria-labelledby="ddrmenu_link_4" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_4" aria-labelledby="menu_link_4" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/student-life/books-and-dining" role="button" class="child1"><span>Books &amp; Dining</span></a></li>
 												<li role="menuitem"><a href="/student-life/arts-and-culture" role="button" class="child2"><span>Arts &amp; Culture</span></a></li>
 												<li role="menuitem"><a href="/housing" role="button" class="child3"><span>University Housing</span></a></li>
@@ -185,10 +185,10 @@
 											</a>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/alumni" role="button" id="ddrmenu_link_6" aria-owns="ddrmenu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
+											<a href="/alumni" role="button" id="menu_link_6" aria-owns="menu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
 												<span class="blueBack">Alumni<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_6" aria-labelledby="ddrmenu_link_6" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_6" aria-labelledby="menu_link_6" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/alumni/events" role="button" class="child1"><span>Events</span></a></li>
 												<li role="menuitem"><a href="/alumni/get-involved" role="button" class="child2"><span>Get Involved</span></a></li>
 												<li role="menuitem"><a href="/alumni/stay-connected" role="button" class="child3"><span>Stay Connected</span></a></li>
@@ -216,8 +216,8 @@
             	<div id="mast-head">
                    <div class="cover-image">
                     <div class="flex-caption">
-                        <div id="dnn_SiteTitlePane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92700 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92700_ContentPane"><!-- Start_Module_92700 --><link rel="stylesheet" href="css/marcomm-style.css" type="text/css"><div id="dnn_ctr92700_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div id="dnn_SiteTitlePane"><div class="  -92700 ">
+<div ><div id="dnn_ctr92700_ContentPane"><!-- Start_Module_92700 --><link rel="stylesheet" href="css/marcomm-style.css" type="text/css"><div id="dnn_ctr92700_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92700_HtmlModule_lblContent"><p style="margin: 0px; padding: 0px;"><span style="font-size: 14px; color: #ffffff;">Reputation. Image. Identity.</span></p>
 <h1 style="margin: 0px; padding-bottom: 0.5%; font-size: 2.7em;">The Office of Marketing and Communications</h1></div>
 
@@ -234,8 +234,8 @@
         <div id="tabs-container">
         	<div class="container">
             	<div class="row">
-            		<div id="dnn_TabsPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-139285 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr139285_ContentPane"><!-- Start_Module_139285 --><div id="dnn_ctr139285_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+            		<div id="dnn_TabsPane"><div class="  -139285 ">
+<div ><div id="dnn_ctr139285_ContentPane"><!-- Start_Module_139285 --><div id="dnn_ctr139285_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr139285_HtmlModule_lblContent"><div class="pane-spacing"> <div id="tabs-list" class="hidden-xs"> <ul class="nav nav-tabs"> <li class="col-sm-1"><a href="/MarComm"> <div class="home-icon"></div> <br> <span class="tabs-name">Home</span></a></li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="brand-icon"></div> <br> <span class="tabs-name">Brand Identity</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Our-Brand">Our Values</a></li> <li><a href="/MarComm/Name-Seal">Name and Logo Usage</a></li> <li><a href="/MarComm/Visual-Identity">Visual Identity</a></li> <li><a href="/MarComm/Stationary">Stationary System</a></li> <li><a href="/MarComm/Athletic-Logo-Usage">Athletics Logo Usage and Downloads</a></li> <li><a href="/Loch">Mascot (Loch)</a></li> <li><a href="/MarComm/Dreams-Made-Real">Dreams. Made Real. Brand Campaign</a></li> </ul> </li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="services-icon"></div> <br> <span class="tabs-name">Services</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/University-Communications">University Communications</a></li> <li><a href="/MarComm/Graphic-Design">Graphic Design</a></li> <li><a href="/MarComm/Photography">Photography</a></li> <li><a href="/MarComm/Website-Design-and-Development">Website Design</a></li> <li><a href="/MarComm/Social-Media">Social Media</a></li> <li><a href="/MarComm/Videography">Videography</a></li> <li><a href="/MarComm/Media-Planning-and-Placement">Media Planning &amp; Placement</a></li> </ul> </li> <li role="presentation" class="col-sm-1"><a href="/MarComm/Our-Team"> <div class="policies-icon"></div> <br> <span class="tabs-name">Our Team</span></a></li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="resources-icon"></div> <br> <span class="tabs-name">Resources</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Campus-Gallery">Campus Gallery</a></li> <li><a href="/MarComm/Ready-to-Use-Copy">Ready to Use Copy</a></li> <li><a href="/MarComm/Templates">Templates</a></li> <li><a href="/MarComm/Logo-Usage">Logos</a></li> <li><a href="/MarComm/Training">Training</a></li> </ul> </li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="public-relations-icon"></div> <br> <span class="tabs-name">Public Relations</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Media-Contacts">Media Contacts</a></li> <li><a href="/MarComm/training">News Media Training</a></li> <li><a href="/MarComm/Working-with-the-Media">Working with the Media</a></li> <li><a href="/MarComm/Faculty-Experts">Faculty Experts</a></li> <li><a href="/news">Newsroom</a></li> </ul> </li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="policies-icon"></div> <br> <span class="tabs-name">Policies</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Social-Media/Social-Media-Guidelines">Social Media Policy &amp; Guidelines</a></li> </ul> </li> <li class="dropdown col-sm-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="request-project-icon"></div> <br> <span class="tabs-name">Submit a Request</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/University-Communications" target="_blank">Communication Request</a></li> <li><a href="https://clayton.service-now.com/marcomm" target="_blank">Project Request</a></li> <li><a href="https://claytonstate.qualtrics.com/jfe/form/SV_0qBJaHaACgBcgnP" target="_blank">Submit a News Tip</a></li> </ul> </li> </ul> </div> </div> <div id="tabs-list-mobile" class="visible-xs"> <div class="list-group"> <ul> <li><a href="/MarComm"> <div class="home-icon"></div> <span class="tabs-name">Home</span></a></li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="brand-icon"></div> <span class="tabs-name">Brand Identity</span><span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Our-Brand">Our Values</a></li> <li><a href="/MarComm/Name-Seal">Name and Logo Usage</a></li> <li><a href="/MarComm/Visual-Identity">Visual Identity</a></li> <li><a href="/MarComm/Stationary">Stationary System</a></li> <li><a href="/MarComm/Athletic-Logo-Usage">Athletics Logo Usage and Downloads</a></li> <li><a href="/Loch">Mascot (Loch)</a></li> <li><a href="/MarComm/Dreams-Made-Real">Dreams. Made Real. Brand Campaign</a></li> </ul> </li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="services-icon"></div> <span class="tabs-name">Services</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Graphic-Design">Graphic Design</a></li> <li><a href="/MarComm/Photography">Photography</a></li> <li><a href="/MarComm/Website-Design-and-Development">Website Design</a></li> <li><a href="/MarComm/Social-Media">Social Media</a></li> <li><a href="/MarComm/Videography">Videography</a></li> <li><a href="/MarComm/Media-Planning-and-Placement">Media Planning &amp; Placement</a></li> </ul> </li> <li><a href="/MarComm/Our-Team"> <div class="policies-icon"></div> <span class="tabs-name">Our Team</span></a></li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="resources-icon"></div> <span class="tabs-name">Resources</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Campus-Gallery">Campus Gallery</a></li> <li><a href="/MarComm/Ready-to-Use-Copy">Ready to Use Copy</a></li> <li><a href="/MarComm/Templates">Templates</a></li> <li><a href="/MarComm/Logo-Usage">Logos</a></li> <li><a href="/MarComm/Training">Training</a></li> </ul> </li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="public-relations-icon"></div> <span class="tabs-name">Public Relations</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Media-Contacts">Media Contacts</a></li> <li><a href="/MarComm/training">News Media Training</a></li> <li><a href="/MarComm/Working-with-the-Media">Working with the Media</a></li> <li><a href="/MarComm/Faculty-Experts">Faculty Experts</a></li> <li><a href="/news">Newsroom</a></li> </ul> </li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="policies-icon"></div> <span class="tabs-name">Policies</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/Social-Media/Social-Media-Guidelines">Social Media Guidelines</a></li> </ul> </li> <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <div class="request-project-icon"></div> <span class="tabs-name">Submit a Request</span> <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a href="/MarComm/University-Communications" target="_blank">Communication Request</a></li> <li><a href="https://clayton.service-now.com/marcomm" target="_blank">Project Request</a></li> <li><a href="https://claytonstate.qualtrics.com/jfe/form/SV_0qBJaHaACgBcgnP" target="_blank">Submit a News Tip</a></li> </ul> </li> </ul> </div> </div></div>
 
 
@@ -246,17 +246,17 @@
         	</div>
         </div>
 
-        <div id="about-container">
+        <div >
         	<div class="container">
             	<div class="row">
                 	<div class="col-sm-12">
-                    	<div id="dnn_ContentPane" class="DNNEmptyPane"></div>
+                    	<div  class="EmptyPane"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div id="dnn_AboutPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-93357 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr93357_ContentPane"><!-- Start_Module_93357 --><div id="dnn_ctr93357_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div id="dnn_AboutPane"><div class="  -93357 ">
+<div ><div id="dnn_ctr93357_ContentPane"><!-- Start_Module_93357 --><div id="dnn_ctr93357_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr93357_HtmlModule_lblContent"><h2>About Marketing and Communications</h2>
 <p>As the central communications office for Clayton State University, the Office of Marketing and Communications advances the Clayton State brand through promotion and management of the University&rsquo;s reputation, image, and identity. We are understandably careful about the way the Clayton State brand is represented.</p>
 <p>The Office of Marketing and Communications has a vested interest in the success of our University and the attainment of our shared goals. We join our partners in celebration of each individual success whether it be enrollment, fundraising, athletics or student outcomes. Our goal is to serve with the highest level of excellence, therefore we seek to establish strategic partnerships in which each party brings its respective expertise to help achieve shared goals.</p></div>
@@ -267,8 +267,8 @@
 </div><!-- End_Module_93357 --></div></div></div></div>
                     </div>
                     <div class="col-sm-6">
-                        <div id="dnn_HelpPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-93358 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr93358_ContentPane"><!-- Start_Module_93358 --><div id="dnn_ctr93358_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div id="dnn_HelpPane"><div class="  -93358 ">
+<div ><div id="dnn_ctr93358_ContentPane"><!-- Start_Module_93358 --><div id="dnn_ctr93358_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr93358_HtmlModule_lblContent"><h2>How We Help You</h2>
 <p style="color: #444444; margin-bottom: 10px;">Our methodology is very simple: We take a research-driven, comprehensive approach that uses a mix of communication strategies to engage, inform, and influence target audiences. In the process, we ask these questions:</p>
 <ul>
@@ -286,13 +286,13 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane1" class="DNNEmptyPane"></div>
+                        <div  class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane2" class="DNNEmptyPane"></div>
+                        <div  class="EmptyPane"></div>
                     </div>
                     <div class="col-sm-4">
-                        <div id="dnn_ContentPane3" class="DNNEmptyPane"></div>
+                        <div  class="EmptyPane"></div>
                     </div>
                 </div>
             </div>
@@ -302,8 +302,8 @@
         	<div class="container">
             <div class="row">
             	<div class="col-sm-6">
-                	<div id="dnn_SeeOurWorkPaneTitle"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92702 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92702_ContentPane"><!-- Start_Module_92702 --><div id="dnn_ctr92702_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                	<div ><div class="  -92702 ">
+<div ><div id="dnn_ctr92702_ContentPane"><!-- Start_Module_92702 --><div id="dnn_ctr92702_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92702_HtmlModule_lblContent"><h2>See Our Work</h2></div>
 
 
@@ -312,8 +312,8 @@
 </div><!-- End_Module_92702 --></div></div></div></div>
                     	<div class="row">
                             <div class="col-sm-6">
-                                <div id="dnn_PortfolioPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92734 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92734_ContentPane"><!-- Start_Module_92734 --><div id="dnn_ctr92734_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                                <div id="dnn_PortfolioPane"><div class="  -92734 ">
+<div ><div id="dnn_ctr92734_ContentPane"><!-- Start_Module_92734 --><div id="dnn_ctr92734_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92734_HtmlModule_lblContent"><p><strong><a href="http://www.clayton.edu/MarComm/Advertising-Portfolio">Advertising Portfolio</a></strong></p>
 <a href="http://www.clayton.edu/MarComm/Advertising-Portfolio"><img alt="Advertising Portfolio" src="images/advertising-image-icon.jpg"></a></div>
 
@@ -323,8 +323,8 @@
 </div><!-- End_Module_92734 --></div></div></div></div>
                             </div>
                             <div class="col-sm-6">
-                                <div id="dnn_PhotoGalleryPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92735 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92735_ContentPane"><!-- Start_Module_92735 --><div id="dnn_ctr92735_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                                <div id="dnn_PhotoGalleryPane"><div class="  -92735 ">
+<div ><div id="dnn_ctr92735_ContentPane"><!-- Start_Module_92735 --><div id="dnn_ctr92735_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92735_HtmlModule_lblContent"><p><strong><a href="http://www.clayton.edu/MarComm/Campus-Gallery">Photo Gallery</a></strong></p>
 <a href="http://www.clayton.edu/MarComm/Campus-Gallery"><img alt="Photo Gallery" src="images/photo-gallery-image-icon.jpg"></a></div>
 
@@ -336,8 +336,8 @@
                     	</div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="dnn_SpotlightPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92703 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92703_ContentPane"><!-- Start_Module_92703 --><div id="dnn_ctr92703_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                    <div ><div class="  -92703 ">
+<div ><div id="dnn_ctr92703_ContentPane"><!-- Start_Module_92703 --><div id="dnn_ctr92703_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92703_HtmlModule_lblContent"><h2>Spotlight</h2>
 
 <p><a href="/laker-connection/Volume13/Issue1/Spring2018" title="View the latest edition of the Laker Connection"><img alt="Current Laker Connection" src="images/cover-thumb.jpg" style="-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);"></a></p>
@@ -349,8 +349,8 @@
 </div><!-- End_Module_92703 --></div></div></div></div>
                 </div>
                 <div class="col-sm-3">
-                        <div id="dnn_ContactPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-92704 DnnVersionableControl">
-<div class="Invisible"><div id="dnn_ctr92704_ContentPane"><!-- Start_Module_92704 --><div id="dnn_ctr92704_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                        <div id="dnn_ContactPane"><div class="  -92704 ">
+<div ><div id="dnn_ctr92704_ContentPane"><!-- Start_Module_92704 --><div id="dnn_ctr92704_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr92704_HtmlModule_lblContent"><h2>Contact Us</h2>
 <p>Have questions? Need more info? Please contact us!
 </p>

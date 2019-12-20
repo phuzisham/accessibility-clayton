@@ -31,14 +31,14 @@
 		<script src="../js/jquery.js" type="text/javascript"></script>
 		<script src="../js/jquery-ui.js" type="text/javascript"></script>
 		<script src="../js/appinsights.js" type="text/javascript"></script>
-		<script src="../js/dnn.js" type="text/javascript"></script>
-		<script src="../js/dnn.modalpopup.js" type="text/javascript"></script>
+		<script src="../js/clayton.js" type="text/javascript"></script>
+		<script src="../js/clayton.modalpopup.js" type="text/javascript"></script>
 		<script src="../js/CustomSearch.js" type="text/javascript"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
 		<script src="../js/jquery.smartmenus.bootstrap.js" type="text/javascript"></script>
-		<script src="../js/dnncore.js" type="text/javascript"></script>
-		<script src="../js/dnn.servicesframework.js" type="text/javascript"></script>
+		<script src="../js/clayton-core.js" type="text/javascript"></script>
+		<script src="../js/clayton.servicesframework.js" type="text/javascript"></script>
 		<script src="../js/scripts.js" type="text/javascript"></script>
 		<script src="../js/outboundGA.js" type="text/javascript"></script>
 		<script src="../js/jquery.flexslider-min.js"></script>
@@ -49,7 +49,7 @@
 	</head>
 
 	<body id="Body">
-		<form method="post" action="/" id="Form" enctype="multipart/form-data">
+		
 			<div id="siteWrapper" class="container-fluid">
 
 			<header>
@@ -87,7 +87,7 @@
 										</h1>
 									</div><!-- / #logo -->
 									<div class="searchArea" role="navigation" aria-label="Secondary CSU Menu">
-										<div id="dnnMenu" style="position: static; left: 0px;">
+										<div id="claytonMenu" style="position: static; left: 0px;">
 											<ul class="nav navbar-nav topLevel sm" data-smartmenus-id="15065261956596768">
 												<li><a href="/students"><span>Students</span></a></li>
 												<li><a href="/faculty-staff"><span>Faculty &amp; Staff</span></a></li>
@@ -112,10 +112,10 @@
 								<div id="stamatsMenu">
 									<ul class="navTopLevel" role="menubar">
 										<li class="dropdown" role="menuitem">
-											<a href="/about" role="button" id="ddrmenu_link_1" aria-owns="ddrmenu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
+											<a href="/about" role="button" id="menu_link_1" aria-owns="menu_sub_1" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item1">
 												<span class="blueBack">About CSU<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_1" aria-labelledby="ddrmenu_link_1" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_1" aria-labelledby="menu_link_1" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/about/dreams-made-real" role="button" class="child1"><span>Dreams. Made Real.</span></a></li>
 												<li role="menuitem"><a href="/about/visit" role="button" class="child2"><span>Visit Us</span></a></li>
 												<li role="menuitem"><a href="/about/history-and-traditions" role="button" class="child3"><span>History &amp; Traditions</span></a></li>
@@ -129,10 +129,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/academics" role="button" id="ddrmenu_link_2" aria-owns="ddrmenu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
+											<a href="/academics" role="button" id="menu_link_2" aria-owns="menu_sub_2" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item2">
 												<span class="blueBack">Academics<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_2" aria-labelledby="ddrmenu_link_2" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_2" aria-labelledby="menu_link_2" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/academics/undergraduate-study" role="button" class="child1"><span>Undergraduate Study</span></a></li>
 												<li role="menuitem"><a href="/academics/degrees-majors-and-certificates" role="button" class="child2"><span>Degrees, Majors &amp; Certificates</span></a></li>
 												<li role="menuitem"><a href="/academics/graduate-study" role="button" class="child3"><span>Graduate Study</span></a></li>
@@ -144,10 +144,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/admissions" role="button" id="ddrmenu_link_3" aria-owns="ddrmenu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
+											<a href="/admissions" role="button" id="menu_link_3" aria-owns="menu_sub_3" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item3">
 												<span class="blueBack">Admissions<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_3" aria-labelledby="ddrmenu_link_3" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_3" aria-labelledby="menu_link_3" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/admissions/undergraduate" role="button" class="child1"><span>Undergraduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/graduate/apply" role="button" class="child2"><span>Graduate Admissions</span></a></li>
 												<li role="menuitem"><a href="/ce" role="button" class="child3"><span>Continuing Education</span></a></li>
@@ -163,10 +163,10 @@
 											</ul>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/student-life" role="button" id="ddrmenu_link_4" aria-owns="ddrmenu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
+											<a href="/student-life" role="button" id="menu_link_4" aria-owns="menu_sub_4" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item4">
 												<span class="blueBack">Student Life<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_4" aria-labelledby="ddrmenu_link_4" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_4" aria-labelledby="menu_link_4" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/student-life/books-and-dining" role="button" class="child1"><span>Books &amp; Dining</span></a></li>
 												<li role="menuitem"><a href="/student-life/arts-and-culture" role="button" class="child2"><span>Arts &amp; Culture</span></a></li>
 												<li role="menuitem"><a href="/housing" role="button" class="child3"><span>University Housing</span></a></li>
@@ -185,10 +185,10 @@
 											</a>
 										</li>
 										<li class="dropdown" role="menuitem">
-											<a href="/alumni" role="button" id="ddrmenu_link_6" aria-owns="ddrmenu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
+											<a href="/alumni" role="button" id="menu_link_6" aria-owns="menu_sub_6" aria-haspopup="true" aria-expanded="false" class="menuitem topLevel item6">
 												<span class="blueBack">Alumni<span class="caret"></span></span>
 											</a>
-											<ul role="menu" id="ddrmenu_sub_6" aria-labelledby="ddrmenu_link_6" class="dropdown-menu" style="display: none;">
+											<ul role="menu" id="menu_sub_6" aria-labelledby="menu_link_6" class="dropdown-menu" style="display: none;">
 												<li role="menuitem"><a href="/alumni/events" role="button" class="child1"><span>Events</span></a></li>
 												<li role="menuitem"><a href="/alumni/get-involved" role="button" class="child2"><span>Get Involved</span></a></li>
 												<li role="menuitem"><a href="/alumni/stay-connected" role="button" class="child3"><span>Stay Connected</span></a></li>
@@ -214,9 +214,9 @@
 
 			<div class="row rowPadding">
 				<div class="departmentWidth">
-					<div id="dnn_departmentHeaderPane" class="departmentHeader col-md-12"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141217 DnnVersionableControl"><a name="141217"></a>
+					<div id="dnn_departmentHeaderPane" class="departmentHeader col-md-12"><div class="  -141217 "><a name="141217"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141217_ContentPane"><!-- Start_Module_141217 --><div id="dnn_ctr141217_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141217_ContentPane"><!-- Start_Module_141217 --><div id="dnn_ctr141217_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141217_HtmlModule_lblContent"><div class="departmentHeader col-md-12 sc-cb-pane-glow">
 <h1><a href="/human-resources">Human Resources</a></h1>
 
@@ -266,9 +266,9 @@
 
 			<div class="row">
 				<div class="departmentHero no-gutter">
-					<div id="dnn_mainHeroImage" class="mainImageLarge"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141224 DnnVersionableControl"><a name="141224"></a>
+					<div id="dnn_mainHeroImage" class="mainImageLarge"><div class="  -141224 "><a name="141224"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141224_ContentPane"><!-- Start_Module_141224 --><div id="dnn_ctr141224_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141224_ContentPane"><!-- Start_Module_141224 --><div id="dnn_ctr141224_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141224_HtmlModule_lblContent"><div class="heroContainer"><img alt="human-resources-banner" src="images/human-resources-home-hero-image.jpg">
 </div></div>
 
@@ -285,9 +285,9 @@
 
 			<div class="row rowPadding">
 				<div class="contentWidth">
-					<div class="col-md-12"><div id="dnn_departmentIntro" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141235 DnnVersionableControl"><a name="141235"></a>
+					<div class="col-md-12"><div id="dnn_departmentIntro" class="contentPane"><div class="  -141235 "><a name="141235"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141235_ContentPane"><!-- Start_Module_141235 --><div id="dnn_ctr141235_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141235_ContentPane"><!-- Start_Module_141235 --><div id="dnn_ctr141235_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141235_HtmlModule_lblContent"><h2>Empowering tomorrow’s leaders, thinkers, doers, dreamers</h2>
 <p>From highly-acclaimed faculty who are leaders in their field to front-life staff who make customer service a priority, Clayton State University is made up of a diverse group of individuals committed to the university’s goal of empowering the next generation of students who will impact the communities in which they live, work, and play.
 </p>
@@ -308,9 +308,9 @@
 			<div class="row rowPadding coolGray">
 				<div class="contentWidth">
 					<div class="col-md-4 col-sm-4 col-xs-6">
-						<div id="dnn_contentIcons1" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141253 DnnVersionableControl"><a name="141253"></a>
+						<div id="dnn_contentIcons1" class="contentPane"><div class="  -141253 "><a name="141253"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141253_ContentPane"><!-- Start_Module_141253 --><div id="dnn_ctr141253_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141253_ContentPane"><!-- Start_Module_141253 --><div id="dnn_ctr141253_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141253_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/about"><img alt src="images/culture.png"><figcaption>
 <h2>About</h2></figcaption></a></figure></div>
 
@@ -321,9 +321,9 @@
 	<div class="clear"></div>
 </div>
 
-</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-141220 DnnVersionableControl"><a name="141220"></a>
+</div><div class="  -141220 "><a name="141220"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141220_ContentPane"><!-- Start_Module_141220 --><div id="dnn_ctr141220_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141220_ContentPane"><!-- Start_Module_141220 --><div id="dnn_ctr141220_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141220_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/student-employees"><img alt src="images/student-employees.png"><figcaption>
 <h2>Student Employees</h2></figcaption></a></figure></div>
 
@@ -337,9 +337,9 @@
 </div></div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
-						<div id="dnn_contentIcons2" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141254 DnnVersionableControl"><a name="141254"></a>
+						<div id="dnn_contentIcons2" class="contentPane"><div class="  -141254 "><a name="141254"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141254_ContentPane"><!-- Start_Module_141254 --><div id="dnn_ctr141254_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141254_ContentPane"><!-- Start_Module_141254 --><div id="dnn_ctr141254_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141254_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/employment-opportunities"><img alt src="images/employment-opportunites.png"><figcaption>
 <h2>Employment Opportunities</h2></figcaption></a></figure></div>
 
@@ -350,9 +350,9 @@
 	<div class="clear"></div>
 </div>
 
-</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-141256 DnnVersionableControl"><a name="141256"></a>
+</div><div class="  -141256 "><a name="141256"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141256_ContentPane"><!-- Start_Module_141256 --><div id="dnn_ctr141256_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141256_ContentPane"><!-- Start_Module_141256 --><div id="dnn_ctr141256_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141256_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/retirees"><img alt src="images/retirees.png"><figcaption>
 <h2>Retirees</h2></figcaption></a></figure></div>
 
@@ -366,9 +366,9 @@
 </div></div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-6">
-						<div id="dnn_contentIcons3" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141255 DnnVersionableControl"><a name="141255"></a>
+						<div id="dnn_contentIcons3" class="contentPane"><div class="  -141255 "><a name="141255"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141255_ContentPane"><!-- Start_Module_141255 --><div id="dnn_ctr141255_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141255_ContentPane"><!-- Start_Module_141255 --><div id="dnn_ctr141255_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141255_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/current-employees"><img alt src="images/current-employees.png"><figcaption>
 <h2>Current Employees</h2></figcaption></a></figure></div>
 
@@ -379,9 +379,9 @@
 	<div class="clear"></div>
 </div>
 
-</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-141257 DnnVersionableControl"><a name="141257"></a>
+</div><div class="  -141257 "><a name="141257"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141257_ContentPane"><!-- Start_Module_141257 --><div id="dnn_ctr141257_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141257_ContentPane"><!-- Start_Module_141257 --><div id="dnn_ctr141257_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141257_HtmlModule_lblContent"><figure class="hrIcons"><a href="/human-resources/managers-supervisors"><img alt src="images/managers-supervisors.png"><figcaption>
 <h2>Managers & Supervisors</h2></figcaption></a></figure></div>
 
@@ -399,16 +399,16 @@
 
 			<div class="row rowPadding">
 				<div class="contentWidth latestHeadlines">
-					<div id="dnn_latestHeadlinesHeading" class="DNNEmptyPane"></div>
+					<div id="dnn_latestHeadlinesHeading" class="EmptyPane"></div>
 				</div>
 			</div>
 
 			<div class="row rowPadding">
 				<div class="contentWidth">
 					<div class="col-md-4 col-sm-6">
-						<div id="dnn_latestEvents" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141153 DnnVersionableControl"><a name="141153"></a>
+						<div id="dnn_latestEvents" class="contentPane"><div class="  -141153 "><a name="141153"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141153_ContentPane"><!-- Start_Module_141153 --><div id="dnn_ctr141153_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141153_ContentPane"><!-- Start_Module_141153 --><div id="dnn_ctr141153_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141153_HtmlModule_lblContent"><div class="flexGray">
 <div class="headingTwoContainer">
 <div class="headingTwoBlue">
@@ -438,9 +438,9 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 					</div>
 
 					<div class="col-md-4 col-sm-6">
-						<div id="dnn_latestFAQ" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141218 DnnVersionableControl"><a name="141218"></a>
+						<div id="dnn_latestFAQ" class="contentPane"><div class="  -141218 "><a name="141218"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141218_ContentPane"><!-- Start_Module_141218 --><div id="dnn_ctr141218_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141218_ContentPane"><!-- Start_Module_141218 --><div id="dnn_ctr141218_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141218_HtmlModule_lblContent"><div class="flexGray">
 <div class="headingTwoContainer">
 <div class="headingTwoBlue">
@@ -475,9 +475,9 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 					</div>
 
 					<div class="col-md-4 col-sm-6">
-						<div id="dnn_latestContacts" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141219 DnnVersionableControl"><a name="141219"></a>
+						<div id="dnn_latestContacts" class="contentPane"><div class="  -141219 "><a name="141219"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141219_ContentPane"><!-- Start_Module_141219 --><div id="dnn_ctr141219_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141219_ContentPane"><!-- Start_Module_141219 --><div id="dnn_ctr141219_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141219_HtmlModule_lblContent"><div class="flexGray">
 	<div class="headingTwoContainer">
 		<div class="headingTwoBlue">
@@ -512,9 +512,9 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 			<div class="row rowPadding coolGray">
 				<div class="contentWidth">
-					<div id="dnn_TestimonialPane" class="contentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-141236 DnnVersionableControl"><a name="141236"></a>
+					<div  class="contentPane"><div class="  -141236 "><a name="141236"></a>
 <div class="DNNContainer_noTitle">
-	<div id="dnn_ctr141236_ContentPane"><!-- Start_Module_141236 --><div id="dnn_ctr141236_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr141236_ContentPane"><!-- Start_Module_141236 --><div id="dnn_ctr141236_ModuleContent" class="claytonModuleContent ">
 	<div id="dnn_ctr141236_HtmlModule_lblContent"><h2>Title IX/EEO Policy</h2>
 <p>Clayton State University is an equal employment, equal access, and equal educational opportunity and affirmative action institution. It is the policy of the University to recruit, hire, train, promote and educate persons without regard to race, color, national or ethnical origin, age, disability, gender, religion, sexual orientation, gender identity or veteran status as required by applicable state and federal laws (including Title VI, Title VII, Title IX, Sections 503, and 504, AREA, ADA, E.O. 11246, and Rev. Proc. 75-50). Clayton State University is an Affirmative Action/Equal Opportunity Institution.
 </p></div>
@@ -534,7 +534,7 @@ jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalen
 
 			<div class="row rowPadding">
 				<div class="contentWidth">
-					<div class="col-md-12"><div id="dnn_departmentPolicy" class="contentPane DNNEmptyPane"></div></div>
+					<div class="col-md-12"><div id="dnn_departmentPolicy" class="contentPane EmptyPane"></div></div>
 				</div>
 			</div>
 

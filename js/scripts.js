@@ -391,14 +391,14 @@ $(document).ready(function(){
 
 	$('#CSU-search-box').focusin(function(){
 		if(window.innerWidth > 767){
-			$('#dnnMenu').css('position', 'absolute').css('left','10000px');
+			$('#claytonMenu').css('position', 'absolute').css('left','10000px');
 		}
 	});
 	$('#CSU-search-box').focusout(function(){
 		if(window.innerWidth > 767){
 			setTimeout(
 				function(){
-					$('#dnnMenu').css('position', 'static').css('left', '0px');
+					$('#claytonMenu').css('position', 'static').css('left', '0px');
 				},500
 			);
 		}
