@@ -25,6 +25,8 @@
 	<link href="../css/featherlight.css" type="text/css" rel="stylesheet">
 	<link href="../css/flexslider.css" type="text/css" rel="stylesheet">
 	<link href="../css/college-skin.css" type="text/css" rel="stylesheet">
+	<link href="../css/smi.css" type="text/css" rel="stylesheet">
+	<link href="../css/careerStyle.css" type="text/css" rel="stylesheet">
 
 	<script src="../axd/WebResource.axd" type="text/javascript"></script>
 	<script src="../axd/ScriptResource.axd" type="text/javascript"></script>
@@ -45,6 +47,8 @@
 	<script src="../js/outboundGA.js" type="text/javascript"></script>
 	<script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
 	<script src="../js/featherlight.js" type="text/javascript"></script>
+	<script src="../js/showOff.js" type="text/javascript"></script>
+	<script src="../js/careerScript.js" type="text/javascript"></script>
 
 	<script async src="../js/2024953.js" type="text/javascript"></script>
 	<script async src="../js/bottom-scripts.js" type="text/javascript"></script>
@@ -216,7 +220,7 @@
 					<div class="collegeHeader col-md-12 sc-cb-pane-glow">
 						<h1><a href="/career">Career Services</a></h1>
 						<div id="collegeNav">
-							<div id="menu-button">Career Services Menu</div>
+							<div id="menu-button" class="careerButton">Career Services Menu</div>
 							<ul>
 								<li class="has-sub first">
 									<a href="/career/students"><span class="sr-only">Career Services </span>Students <span class="caret"></span></a>
@@ -284,114 +288,19 @@
 			<div class="row">
 				<div class="departmentHero no-gutter">
 					<div class="mainImageLarge">
-
-						<style type="text/css">
-						.flex-control-nav.flex-control-paging {
-							background-color: #dddddc;
-							padding-top:10px;
-						}
-						.flexslider .description {
-							font-family: Arial, Helvetica, sans-serif;
-							font-size: 1.3em;
-							padding: 0.75em 1.5em;
-							height: auto;
-							max-height: 140px;
-							position: absolute;
-							width: 53%;
-							bottom: 80px;
-							left: 23%;
-							background-color: rgba(255,255,255,0.8);
-							color: #54565b;
-						}
-						.flexslider .description p.title {
-							font-size: 1.5em;
-							text-transform: uppercase;
-							font-weight: bold;
-							margin-bottom: 15px;
-							margin-top:0;
-						}
-						.flexslider .description p.cta {
-							font-size: 1em;
-							margin-bottom: 10px;
-						}
-						.flexslider {border:none;}
-						.flexslider .flex-direction-nav button {
-							background-color: #616062;
-							color: transparent;
-							text-shadow: none;
-							background-image: url(../images/slider_arrow.png);
-							background-position: center;
-							background-size: cover;
-							border: 0;
-							display: block;
-						}
-						.flexslider .flex-direction-nav button.flex-next {
-							-moz-transform: scaleX(-1);
-							-o-transform: scaleX(-1);
-							-webkit-transform: scaleX(-1);
-							transform: scaleX(-1);
-							filter: FlipH;
-							-ms-filter: "FlipH";
-						}
-						.flex-control-nav.flex-control-paging li button.flex-active, .flex-control-nav.flex-control-paging li button:hover, .flex-control-nav.flex-control-paging li button:focus {
-							color: #000000;
-							background-color: #fc6719;
-						}
-						.flex-control-nav.flex-control-paging li button {
-							color: transparent;
-							border-radius: 0;
-							height: 20px;
-							width: 20px;
-							color: #ffffff;
-							background-color: #092c74;
-							border: 0;
-							padding: 0;
-							display: inline-block;
-							font-size: 14px;
-							line-height: 14px;
-							font-weight: 700;
-						}
-						.flex-control-nav {
-							bottom: -41px;
-						}
-						@media only screen and (min-width: 768px) {
-							.flexslider:hover .flex-direction-nav .flex-prev, .flexslider .flex-direction-nav .flex-prev {
-								opacity: 1;
-								left: 0px !important;
-							}
-							.flexslider.hover .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-next {
-								opacity: 1;
-								right: 0px !important;
-							}
-						}
-						@media only screen and (max-width:1024px) {
-							.flexslider .description {
-								max-height: 121px;
-								width: 76%;
-								bottom: 0;
-								left: 12%;
-								font-size:1.2em;
-							}
-							.flexslider .description p.title {
-								font-size:1.2em;
-							}
-							.cta.mobile {display:none;}
-						}
-						</style>
-
 						<div class="claytonModuleContent">
 							<div class="slider">
 								<div class="flexslider">
 									<ul aria-live="polite" class="slides">
 										<li>
-											<img alt="Networking and Personal Branding" src="images/networking-and-personal-branding.jpg">
+											<img alt="Networking and Personal Branding" src="../images/networking-and-personal-branding.jpg">
 											<div class="description">
 												<p class="title">Walk-in Resume Review</p>
 												<p class="cta mobile">Tuesdays,  2 p.m. &ndash; 4 p.m. | Wednesdays,  10 a.m. &ndash; 2 p.m.</p>
 											</div>
 										</li>
 										<li>
-											<img alt="Get Linked In" src="images/get-linked-in-slide.jpg">
+											<img alt="Get Linked In" src="../images/get-linked-in-slide.jpg">
 											<div class="description">
 												<p class="title">SAVE THE DATE &ndash; Job and Graduate School Fair</p>
 												<p class="cta mobile">Thursday, March 19, 2020 | 12:00 p.m. &ndash; 3:00 p.m. | Student Activities Ballrooms</p>
@@ -402,70 +311,6 @@
 								</div>
 							</div>
 						</div>
-
-						<script>
-						$(window).load(function(){
-							$('.flexslider').flexslider({
-								touch: true,
-								slideshow: false,
-								controlNav: true,
-								slideshowSpeed: 7000,
-								animationSpeed: 600,
-								initDelay: 0,
-								start: function(slider) { // Fires when the slider loads the first slide
-									var slide_count = slider.count - 1;
-
-									$(slider)
-									.find('img.lazy:eq(0)')
-									.each(function() {
-										var src = $(this).attr('data-src');
-										$(this).attr('src', src).removeAttr('data-src');
-									});
-								},
-								before: function(slider) { // Fires asynchronously with each slider animation
-									var slides     = slider.slides,
-									index      = slider.animatingTo,
-									$slide     = $(slides[index]),
-									$img       = $slide.find('img[data-src]'),
-									current    = index,
-									nxt_slide  = current + 1,
-									prev_slide = current - 1;
-
-									$slide
-									.parent()
-									.find('img.lazy:eq(' + current + '), img.lazy:eq(' + prev_slide + '), img.lazy:eq(' + nxt_slide + ')')
-									.each(function() {
-										var src = $(this).attr('data-src');
-										$(this).attr('src', src).removeAttr('data-src');
-									});
-								},
-								after: function(slider){
-									slideContentOverflow();
-								}
-							});
-							slideContentOverflow();
-						});
-						$(window).resize(function(){
-							slideContentOverflow();
-						});
-
-						function slideContentOverflow(){
-							if($(window).width() > 767){
-								var height = $('.sliderRow .flex-active-slide .slideContent').height() + 62;
-								var slide = $('.sliderRow .flex-active-slide').height() / 2;
-								if(height > slide){
-									$('.sliderRow .contentWidth.no-gutter').css('overflow', 'visible');
-									$('.sliderRow .slides li').css('margin-bottom', '0px');
-									$('.sliderRow .flex-active-slide').css('margin-bottom', height-slide+65 + 'px');
-								}else{
-									$('.sliderRow .contentWidth.no-gutter').css('overflow', 'hidden');
-									$('.sliderRow .slides li').css('margin-bottom', '0px');
-									$('.sliderRow .flex-active-slide').css('margin-bottom', 0 + 'px');
-								}
-							}
-						}
-						</script>
-
 					</div>
 				</div>
 			</div>
@@ -473,14 +318,12 @@
 				<div class="contentWidth">
 					<div class="contentPane">
 						<div class="claytonModuleContent">
-							<div id="dnn_ctr141966_HtmlModule_lblContent">
 								<div class="row">
 									<div class="col-sm-12">
 										<p class="firstSentence">While at Clayton State, your job is to explore. To discover your strengths and define what you want to do with them. To seize opportunities that come your way. Our job in Career Services is to help make all of that possible for you.&nbsp;&nbsp;</p>
 										<p>At every stage of your college career, we provide the resources you need for success both during your time here and in your professional life after graduation. From resume building and interview guidance to career fairs, internships and career coaching, there is no shortage of pathways to making your dream real. Let&rsquo;s get started!</p>
 									</div>
 								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -495,7 +338,7 @@
 										<h3>Laker CareerZone</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Laker CareerZone tile" src="images/laker-career-zone-tile.jpg"></p>
+										<p><img alt="Laker CareerZone tile" src="../images/laker-career-zone-tile.jpg"></p>
 										<p>Utilize this career management system to discover new job, internship, work study opportunities and register for workshops/events!</p>
 										<p><a href="https://clayton-csm.symplicity.com/students/" target="_blank">Student Login<br>(Upload your résumé and apply for jobs!)</a></p>
 										<p><a href="https://clayton-csm.symplicity.com/employers/" target="_blank">Recruiter Login<br>Post jobs and register for events!</a></p>
@@ -508,7 +351,7 @@
 										<h3>Career/Major Exploration</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Career Exploration" src="images/career-exploration-tile.jpg"></p>
+										<p><img alt="Career Exploration" src="../images/career-exploration-tile.jpg"></p>
 										<p>Career Decisions<br>
 											Clayton State Majors and Related Careers<br>
 											Interests<br>
@@ -529,7 +372,7 @@
 									<div class="text">
 										<p>Thousands of videos! Industry professionals sharing their job descriptions, backgrounds and preparation advice. “Get Hired” advice videos on interviewing, resume writing, and many more topics to help you land that job!</p>
 										<div class="embed-responsive embed-responsive-16by9">
-											<iframe class="embed-responsive-item" scrolling="no" src="https://www.candidcareer.com/widget/widget4.php?uid=2423" title="Candid Career Videos"></iframe>
+											<iframe class="embed-responsive-item" src="https://www.candidcareer.com/widget/widget4.php?uid=2423" title="Candid Career Videos"></iframe>
 										</div>
 									</div>
 								</div>
@@ -540,7 +383,7 @@
 										<h3>Corporate Partners</h3>
 									</div>
 									<div class="text">
-										<p><img src="images/corporate-partners-tile.jpg" alt="corporate-partners-tile"></p>
+										<p><img src="../images/corporate-partners-tile.jpg" alt="corporate-partners-tile"></p>
 									</div>
 									<p class="read-button"><a class="btn btn-primary" href="/Giving/Corporate-Partners">View the Corporate Partners</a></p>
 								</div>
@@ -555,7 +398,7 @@
 										<h3>Upcoming Events</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Upcoming Events tile" src="images/upcoming-events-tile.jpg"></p>
+										<p><img alt="Upcoming Events tile" src="../images/upcoming-events-tile.jpg"></p>
 										<div id="adx032234">
 											<div class="homepageFeed">
 												<div class="col-sm-4 homepageFeed-date"><span>August 20</span></div>
@@ -591,23 +434,13 @@
 									</div>
 								</div>
 							</div>
-
-							<script type="text/javascript">
-							if (typeof jQuery != 'undefined') {
-								jQuery(document).ready(function () {
-									var adx="Events are temporarily unavailable. Please check back later.";
-									jQuery.ajax({ dataType: 'script', url: 'https://adminsystems.clayton.edu/adcalendar/EventListSyndicator.aspx?type=N&number=5&category=32-114&adjustmultidayevents=Y&expire=Y&showCanc=Y&adpid=9&nem=No+events+are+available+that+match+your+request&sortorder=ASC&ver=2.0&target=adx032234'
-								});setTimeout(function() {if(typeof response=='undefined'){jQuery('#adx032234').html(adx);}}, 5000);
-							});}else { document.getElementById('adx032234').innerHTML = 'Events are temporarily unavailable because the jQuery library cannot be located.'; }
-							</script>
-
 							<div class="claytonModuleContent">
 								<div class="profile-box-middle">
 									<div class="headingTwoSOGS">
 										<h3>Online Career Guide</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Career Guide" src="images/career-guide-tile.jpg"></p>
+										<p><img alt="Career Guide" src="../images/career-guide-tile.jpg"></p>
 										<p>This online resource is full of tips, advice and samples regarding career assessments, job search strategies, resume and cover letter development, interviewing, social media and dressing for success.</p>
 									</div>
 									<p class="read-button"><a class="btn btn-primary" href="/career/online-career-guide">View the Career Guide</a></p>
@@ -619,14 +452,12 @@
 										<h3>Big Interview</h3>
 									</div>
 									<div class="text">
-										<p><img src="images/big-interview-tile.jpg" alt="Big Interview tile"></p>
+										<p><img src="../images/big-interview-tile.jpg" alt="Big Interview tile"></p>
 										<p>Use Big Interview video and virtual tutorial to develop and practice interviewing skills with unlimited interview practice sessions.</p>
 										<p class="read-button"><a class="btn btn-primary" href="https://clayton.biginterview.com/" target="_blank">Learn More</a></p>
 									</div>
 								</div>
 							</div>
-
-							<link rel="stylesheet" href="css/SMI.css" type="text/css">
 
 							<div class="claytonModuleContent">
 								<div class="profile-box-middle">
@@ -634,19 +465,23 @@
 										<h3>Contact Career Services</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Computer Major" src="images/it-thumbnail.jpg"></p>
+										<p><img alt="Computer Major" src="../images/it-thumbnail.jpg"></p>
 										<p><strong>Location: Edgewater Hall, Suite 228</strong><br>Phone: (678) 466-5400<br>Fax: (678) 466-5468<br>Email: <a href="mailto:career@clayton.edu">career@clayton.edu</a><br>Office Hours: Monday-Friday, 8:00 am - 5:00 pm<br>Evening Hours by Appointment</p>
 										<a title="Career Services Facebook" href="http://www.facebook.com/pages/Clayton-State-University-Career-Services/132725196496" target="_blank">
+											<p class="hidden">Facebook</p>
 											<div title="Follow Us on Facebook" class="facebook-news"></div>
 										</a>
 										<a title="Twiiter @ CSU Careers" href="http://twitter.com?utm_campaign=welcome20100914phx&utm_content=profile&utm_medium=email&utm_source=welcome#!csucareers" target="_blank">
+											<p class="hidden">Twitter</p>
 											<div title="Follow Us on Twitter" class="twitter-news">
 											</div>
 										</a>
 										<a title="Follow us on YouTube" href="https://www.youtube.com/playlist?list=PLB1XTXyfwMgpgLoQ6-yy-fixWK0BoKIUG" target="_blank">
+											<p class="hidden">YouTube</p>
 											<div title="Follow Us on YouTube" class="youtube-news"></div>
 										</a>
 										<a title="Follow us on Instagram" href="http://instagram.com/claytonstatecareers" target="_blank">
+											<p class="hidden">Instagram</p>
 											<div title="Follow Us on Instagram" class="instagram-news"></div>
 										</a>
 									</div>
@@ -663,7 +498,7 @@
 										<h3>Internship Information</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Internship Information tile" src="images/internship-information-tile.jpg"></p>
+										<p><img alt="Internship Information tile" src="../images/internship-information-tile.jpg"></p>
 										<p>Internships integrate knowledge and theory learned in the classroom with practical application and skills development in a professional setting. Internships give students the opportunity to gain valuable applied experience and make connections in professional fields they are considering for career paths; and give employers the opportunity to guide and evaluate talent.</p>
 										<p class="col-sm-4"><a class="btn btn-primary" href="/career/students/internship-information">Students</a></p>
 										<p class="col-sm-4"><a class="btn btn-primary" href="/career/employers/internship-information">Employers</a></p>
@@ -676,7 +511,7 @@
 										<h3>Laker Link Career</h3>
 									</div>
 									<div class="text">
-										<p><img alt="Laker Link Career tile" src="images/laker-link-tile.jpg"></p>
+										<p><img alt="Laker Link Career tile" src="../images/laker-link-tile.jpg"></p>
 										<div class="headingTwoSOGS">
 											<h4>Mentoring Program</h4>
 										</div>
@@ -694,25 +529,25 @@
 										<div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
 											<div class="carousel-inner">
 												<div class="item active"><br>
-													<img alt="Jeffrey Liebert" class="img-responsive" src="images/jeffrey-liebert.jpg">
+													<img alt="Jeffrey Liebert" class="img-responsive" src="../images/jeffrey-liebert.jpg">
 													<h3>Jeffrey Liebert</h3>
 													<p class="testimonial_subtitle">Criminal Justice</p>
 													<p><a href="/career/CareerSpotlights/">Learn More</a></p>
 												</div>
 												<div class="item"><br>
-													<img alt="Ashley Denk" class="img-responsive" src="images/ashley-denk.jpg">
+													<img alt="Ashley Denk" class="img-responsive" src="../images/ashley-denk.jpg">
 													<h3>Ashley Denk</h3>
 													<p class="testimonial_subtitle">Psychology and Human Services</p>
 													<p><a href="/career/CareerSpotlights/">Learn More</a></p>
 												</div>
 												<div class="item"><br>
-													<img alt="Jose Avila " class="img-responsive" src="images/jose-avila.jpg">
+													<img alt="Jose Avila " class="img-responsive" src="../images/jose-avila.jpg">
 													<h3>Jose Avila</h3>
 													<p class="testimonial_subtitle">Business</p>
 													<p><a href="/career/CareerSpotlights/">Learn More</a></p>
 												</div>
 												<div class="item"><br>
-													<img alt="ShaCori Hillman" class="img-responsive" src="images/shacori-Hillman-.jpg">
+													<img alt="ShaCori Hillman" class="img-responsive" src="../images/shacori-Hillman-.jpg">
 													<h3>ShaCori Hillman</h3>
 													<p class="testimonial_subtitle">Health Sciences</p>
 													<p><a href="/career/career/career-spotlights">Learn More</a></p>
@@ -729,39 +564,6 @@
 									</div>
 								</div>
 							</div>
-
-							<script type="text/javascript" src="js/jquery.jshowoff.min.js"></script>
-
-							<script type="text/javascript">
-							$(document).ready(function(){ $('#slidingFeatures').jshowoff({
-								effect: 'slideLeft',
-								controlText:{play:'Play',pause:'Pause',previous:'<',next:'>'},
-								hoverPause: false
-							}); });
-							</script>
-
-							<script type="text/javascript">
-							$('#features').jshowoff({ speed:1500, links: false }); });
-							</script>
-
-							<script type="text/javascript">
-							// fix pre overflow in IE
-							(function ($) {
-								$.fn.fixOverflow = function () {
-									if ($.browser.msie) {
-										return this.each(function () {
-											if (this.scrollWidth > this.offsetWidth) {
-												$(this).css({ 'padding-bottom' : '20px', 'overflow-y' : 'hidden' });
-											}
-										});
-									} else {
-										return this;
-									}
-								};
-							})(jQuery);
-							$('pre').fixOverflow();
-							</script>
-
 						</div>
 					</div>
 				</div>
