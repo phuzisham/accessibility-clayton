@@ -442,6 +442,27 @@
 		</section>
 		<!-- End Page Content -->
 
+		<script type="text/javascript">
+		if (typeof jQuery != 'undefined') {
+			jQuery(document).ready(function () {
+				var adx="Events are temporarily unavailable. Please check back later.";
+				jQuery.ajax({
+					dataType: 'script',
+					url: 'https://adminsystems.clayton.edu/adcalendar/EventListSyndicator.aspx?type=N&number=5&category=7-18&department=10&adjustmultidayevents=Y&expire=Y&showCanc=Y&ics=Y&adpid=1017&nem=No+events+are+available+that+match+your+request&sortorder=ASC&browser=new&ver=2.0&target=adx081257'
+				});
+
+				setTimeout(function() {
+					if(typeof response=='undefined'){
+						jQuery('#adx081257').html(adx);
+					}}, 5000);
+				});
+			}
+
+			else {
+				document.getElementById('adx081257').innerHTML = 'Events are temporarily unavailable because the jQuery library cannot be located.';
+			}
+			</script>
+
 		<!-- Footer -->
 		<footer class="mainFooter row" id="footer">
 			<div class="col-xs-12">
@@ -493,24 +514,26 @@
 					<ul class="socialMedia">
 						<li>
 							<a href="https://twitter.com/ClaytonState" target="_blank">
-								<span class="twitter blackBack"><p class="hiddenSocial">Twitter</p></span>
+								<span class="twitter blackBack"></span>
+								<p class="hiddenSocial">Twitter</p>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/claytonstateuniv/" target="_blank">
-								<span class="instagram blackBack"><p class="hiddenSocial">Instagram</p></span>
+								<span class="instagram blackBack"></span>
+								<p class="hiddenSocial">Instagram</p>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.facebook.com/ClaytonStateUniversity/" target="_blank">
-								<span class="youtube blackBack"></span>
-<span class="facebook blackBack"></span><p class="hiddenSocial">Facebook</p>
+								<span class="facebook blackBack"></span>
+								<p class="hiddenSocial">Facebook</p>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.youtube.com/user/ClaytonSTNews" target="_blank">
 								<span class="youtube blackBack"></span>
-<span class="youtube blackBack"></span><p class="hiddenSocial">YouTube</p>
+								<p class="hiddenSocial">YouTube</p>
 							</a>
 						</li>
 					</ul><!-- / .socialMedia -->
@@ -534,27 +557,6 @@
 			</div><!-- / .colorHolder -->
 		</footer>
 		<!-- end footer -->
-
-		<script type="text/javascript">
-		if (typeof jQuery != 'undefined') {
-			jQuery(document).ready(function () {
-				var adx="Events are temporarily unavailable. Please check back later.";
-				jQuery.ajax({
-					dataType: 'script',
-					url: 'https://adminsystems.clayton.edu/adcalendar/EventListSyndicator.aspx?type=N&number=5&category=7-18&department=10&adjustmultidayevents=Y&expire=Y&showCanc=Y&ics=Y&adpid=1017&nem=No+events+are+available+that+match+your+request&sortorder=ASC&browser=new&ver=2.0&target=adx081257'
-				});
-
-				setTimeout(function() {
-					if(typeof response=='undefined'){
-						jQuery('#adx081257').html(adx);
-					}}, 5000);
-				});
-			}
-
-			else {
-				document.getElementById('adx081257').innerHTML = 'Events are temporarily unavailable because the jQuery library cannot be located.';
-			}
-			</script>
 
 		</div><!-- /.SiteWrapper -->
 		<input name="ScrollTop" type="hidden" id="ScrollTop">
